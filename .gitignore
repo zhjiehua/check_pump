@@ -31,9 +31,16 @@
 *.out
 *.app
 
-#
+# User add
 *.opensdf
-Win32/
+
+check/ipch/
+check/Win32/
 check/weiduodianzi/Debug/
 check/weiduodianzi/GeneratedFiles/
+
+pump/ipch/
+pump/Win32/
+pump/weiduodianzi/Debug/
+pump/weiduodianzi/GeneratedFiles/
 
