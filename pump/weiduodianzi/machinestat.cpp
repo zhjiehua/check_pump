@@ -285,7 +285,7 @@ void MachineStat::initMachineStat()
 	if(last_time == 0)
 	{
 		//Ð´Èëlast_time;
-		DataBase::getInstance()->updateDate("last_time", QString::number(now));
+		//DataBase::getInstance()->updateDate("last_time", QString::number(now));
 
 		qDebug() << "last_time == 0";
 	}
@@ -305,12 +305,13 @@ void MachineStat::initMachineStat()
 		{
 			//while(1)
 			qDebug() << "=======now > last_time";
-			DataBase::getInstance()->updateDate("last_time", QString::number(now));
+			//DataBase::getInstance()->updateDate("last_time", QString::number(now));
 
 			noRTCBattery = false;
 		}
 	}
 
+	DataBase::getInstance()->updateDate("last_time", QString::number(now));
 	system(QString("hwclock -s").toLatin1().data());
 #endif
 
@@ -607,7 +608,8 @@ quint32 MachineStat::updateFlowByGradientList(quint32 time)
 double MachineStat::compensationForPress(uint32 arg)
 {
 	double v0 = pDb->queryData("pressRawV0").toDouble();
-	double val = ((double)arg-v0)*0.01;
+	//double val = ((double)arg-v0)*0.01;
+	double val = ((double)arg-v0)*0.015;
 	QList<LineUint> &pressCompensationList = pDb->getPressCompensationList();
 	for (int i = 0; i < pressCompensationList.count(); i++)
 	{

@@ -2,6 +2,9 @@
 	DATE			VERSION		DESCRIPTION							AUTHER
 	2016-08-11		V0.90		许可证控件不能保存首位是0的数字		zhjiehua
 	2016-08-12		V0.91		修改GLP页面（生产日期、安装日期等）	zhjiehua
+	2016-08-17		V0.92		解决模拟口的bug						zhjiehua
+	2016-09-01		V0.93		添加灯源密码，调整灯源记录表格式
+								修正Clarity协议的上传频率bug		zhjiehua
 */
 
 #include "baseMainPage.h"

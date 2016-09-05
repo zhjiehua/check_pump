@@ -40,6 +40,7 @@ public:
 	{
 		ADMIN,
 		USER,
+		LAMP,
 	};
 
 	enum MachineTime

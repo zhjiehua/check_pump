@@ -153,6 +153,7 @@ void DataBase::restoreWDADataBase(bool restore /*= false*/)
 	//用户密码;
 	dbData["pwd"] = "111111";
 	dbData["usrpwd"] = "222222";
+	dbData["lamppwd"] = "333333";
 
 	//时间页面;
 	dbData["usedTime"] = "0";//累计开机时间;

@@ -24,8 +24,11 @@ void PwdPage::initFocusList()
 {
 	if(MachineStat::getInstance()->usrType == MachineStat::ADMIN)
 		ui.usrEdit->setText("Admin");
-	else
+	else if(MachineStat::getInstance()->usrType == MachineStat::USER)
 		ui.usrEdit->setText("User");
+	else
+		ui.usrEdit->setText("Lamp");
+
 	ui.usrEdit->setEnabled(false);
 	ui.loginBtn->installEventFilter(this);
 	//ui.pwdEdit->installEventFilter(this);
@@ -62,8 +65,10 @@ bool PwdPage::eventFilter(QObject *obj, QEvent *event)
 
 				if(MachineStat::getInstance()->usrType == MachineStat::ADMIN)
 					p = DataBase::getInstance()->queryData("pwd");
-				else
+				else if(MachineStat::getInstance()->usrType == MachineStat::USER)
 					p = DataBase::getInstance()->queryData("usrpwd");
+				else
+					p = DataBase::getInstance()->queryData("lamppwd");
 
 				if(pwd.compare(p) == 0)
 				{

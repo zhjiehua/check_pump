@@ -8,6 +8,9 @@
 
 #define RECORD_CNT_PERPAGE 3
 
+extern int g_nActScreenX;
+extern int g_nActScreenY;
+
 LampHistoryPage::LampHistoryPage(QWidget *parent /*= 0*/, quint8 index, quint8 previndex, quint32 add)
 	: CBasePage(tr("Lamp History"), index, previndex, add, parent )
 {
@@ -85,7 +88,22 @@ void LampHistoryPage::on_nextBtn_clicked()
 
 void LampHistoryPage::initDisplay()
 {
-	int width[4]={30,70,80,100};
+	int width[4];
+	if(g_nActScreenX < 420)
+	{
+		width[0] = 30;
+		width[1] = 70;
+		width[2] = 80;
+		width[3] = 100;
+	}
+	else
+	{
+		width[0] = 30*2;
+		width[1] = 70*2;
+		width[2] = 80*2;
+		width[3] = 100*2;
+	}
+	
 	MyTableModel *gradient_model = MyTableModel::createModelAndConnectToView(ui.tableView, 4, width, TABLE_LAMPHISTORY);
 
     QStringList titleList;

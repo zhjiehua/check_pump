@@ -98,7 +98,7 @@ void FlowFixPage::on_startBtn_clicked()
 	flag = !flag;
 	if(flag)
 	{
-		quint32 timeMin[] = {1, 2, 3, 5, 10};
+		quint32 timeMin[] = {1, 2, 3, 5, 10, 30};
 		quint32 index = ui.timeCombo->currentIndex();
 		//ui.timeCombo->setCurrentIndex(0);
 		//QTimer::singleShot(60000*(index+1), this, SLOT(singleTimeOut()));

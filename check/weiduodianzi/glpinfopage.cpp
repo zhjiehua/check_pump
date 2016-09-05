@@ -124,7 +124,7 @@ bool GlpInfoPage::eventFilter(QObject *obj, QEvent *event)
 		if( ke->key() == Qt::Key_Return && MachineStat::getInstance()->pwdNeed)
 		{
 			MachineStat::getInstance()->whichPage = g_pMainWindow->GetPageIndex();
-			MachineStat::getInstance()->usrType = MachineStat::USER;
+			MachineStat::getInstance()->usrType = MachineStat::LAMP;
 			g_pMainWindow->changePage(PWDPAGE_INDEX);
 			return true;
 		}

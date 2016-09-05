@@ -439,6 +439,7 @@ void CommunicationCoupling::processCmd4Mcu(quint8 type, quint32 cmd, quint32 arg
 		{
 			strDisp = QString("mcu read au val;");
 			m_pMachine->updatePresVal(arg);
+			//qDebug() << "PRESS = " << arg;
 		}
 		break;
 	default:

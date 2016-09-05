@@ -409,8 +409,7 @@ void CommunicationCoupling::processCmd4PcClarity(quint8 hID, quint32 hAI, quint3
 		}
 		break;
 	case PFCC_READ_SIG:
-		{
-			
+		{	
 			quint32 sampleVal =m_pMachine->getSamleVal();
 			//sampleVal = 74746;      //这是搞什么呢？？？？？？
 			sendCmdClarity(0,PFCC_READ_SIG,sampleVal);
@@ -515,6 +514,7 @@ void CommunicationCoupling::processCmd4PcClarity(quint8 hID, quint32 hAI, quint3
 		{
 			//设置上传频率;
 			//m_pMachine->setUploadAuFreq(!!hVal);
+			hVal = QString::number(hVal, 16).toInt();
 			m_pMachine->setUploadAuFreq(hVal);
 			sendClarityACK();
 		}

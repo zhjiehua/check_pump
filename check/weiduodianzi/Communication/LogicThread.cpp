@@ -563,7 +563,7 @@ void Worker::setupCommunication()
     //! 判断使用串口还是网口和PC通讯;
     if( m_nConnectPort == PC_COMMUNICATION_PORT_UART )
         setupSerialCommunication();
-    else if(m_nConnectPort = PC_COMMUNICATION_PORT_NET)
+    else if(m_nConnectPort == PC_COMMUNICATION_PORT_NET)
         setupNetworkCommunication();//张杰华添加@2016-06-23
 	else
 		initSPIDevice();
@@ -804,23 +804,23 @@ void Worker::uploadAuToPc(quint8 chanel, quint32 au , quint32 au2)
 
 		if(chanel == 0)
 		{
-			spi_temp = au/0xFF;
+			spi_temp = au>>8;
 			if(spi_temp > 0xFFFF)
 				spi_temp = 0xFFFF;
 			temp = (quint16)spi_temp;
 			//qDebug() << "au = " << au;
-			//qDebug() << "spi_temp = " << (uint16_t)spi_temp;
+			//qDebug() << "spi_temp = " << temp;
 			spiWrite(&temp, 1);
 		}
 		else
 		{
-			spi_temp = au/0xFF;	
+			spi_temp = au>>8;	
 			if(spi_temp > 0xFFFF)
 				spi_temp = 0xFFFF;
 			temp = (quint16)spi_temp;
 			spiWrite(&temp, 1);
 
-			spi_temp2 = au2/0xFF;
+			spi_temp2 = au2>>8;
 			if(spi_temp2 > 0xFFFF)
 				spi_temp2 = 0xFFFF;
 			temp = (quint16)spi_temp2;
