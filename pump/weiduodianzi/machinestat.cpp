@@ -617,8 +617,9 @@ quint32 MachineStat::updateFlowByGradientList(quint32 time)
 double MachineStat::compensationForPress(uint32 arg)
 {
 	double v0 = pDb->queryData("pressRawV0").toDouble();
-	double val = ((double)arg-v0)*0.01;
-	//double val = ((double)arg-v0)*0.015;
+	//double val = ((double)arg-v0)*0.01;//40MPa量程
+	double val = ((double)arg-v0)*0.0128; //51MPa量程
+	//double val = ((double)arg-v0)*0.015; //60MPa量程
 	QList<LineUint> &pressCompensationList = pDb->getPressCompensationList();
 	for (int i = 0; i < pressCompensationList.count(); i++)
 	{

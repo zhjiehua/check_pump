@@ -8,6 +8,7 @@
 	2016-09-12		V0.94		添加4个泵型号；
 								修改总吸液量的bug						zhjiehua
 	2016-10-17		V0.95		压力量程改回40MPa						zhjiehua
+	2016-10-17		V0.96		压力量程改为51MPa						zhjiehua
 */
 
 #include "baseMainPage.h"
