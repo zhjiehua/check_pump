@@ -84,8 +84,13 @@ void GlpInfoPage::updateBugleDisp(quint32 cnt)
 {
 	quint32 pumpType = DataBase::getInstance()->queryData("pumptype").toInt();
 	QList<double> pumpVolume;
-	pumpVolume<<60.8057<<248.1608<<1<<1<<1<<1<<1; //单位uL
-	double totalFluid = pumpVolume.at(pumpType) * cnt/1000;
+
+	//pumpVolume<<60.8057<<248.1608<<1<<1<<1<<1<<1; //单位uL
+	//double totalFluid = pumpVolume.at(pumpType) * cnt/1000;
+
+	//pumpVolume<<0.0608057<<0.2481608<<1<<1<<1<<1<<1; //单位uL
+	pumpVolume<<0.0608057<<0.2481608<<1<<1<<1<<1<<1<<1<<1<<1; //单位uL
+	double totalFluid = pumpVolume.at(pumpType) * cnt;
     ui.bltUsedLbl->setText(QString::number(cnt));
 	ui.totalFluidLbl->setText(QString::number(totalFluid));
 }
@@ -105,7 +110,8 @@ void GlpInfoPage::pumpChange(int pumpType)
 	MachineStat::getInstance()->m_bPumpTypeChange = true;
 
 	//更新最大最小压力
-	int array[7]={42, 25 , 20, 20, 15, 10, 10};
+	//int array[7]={42, 25 , 20, 20, 15, 10, 10};
+	int array[11]={42, 25 , 20, 20, 20, 15, 15, 10, 10, 10, 10};
 	QString temp = QString::number(array[pumpType]);
 	DataBase::getInstance()->updateDate("maxpress", temp);
 

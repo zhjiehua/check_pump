@@ -72,28 +72,28 @@
         <translation type="obsolete">取消激活</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="42"/>
+        <location filename="AdminPage.ui" line="51"/>
         <source>Deactive</source>
         <translation>取消激活</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="55"/>
+        <location filename="AdminPage.ui" line="64"/>
         <source>UTC</source>
         <translation>清使用时间</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="68"/>
+        <location filename="AdminPage.ui" line="77"/>
         <source>PTC</source>
         <oldsource>BTC</oldsource>
         <translation>清泵时间</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="81"/>
+        <location filename="AdminPage.ui" line="90"/>
         <source>Reset</source>
         <translation>恢复</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="105"/>
+        <location filename="AdminPage.ui" line="114"/>
         <source>Manuf Date:</source>
         <translation>生产日期:</translation>
     </message>
@@ -102,39 +102,39 @@
         <translation type="obsolete">安装日期:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="177"/>
+        <location filename="AdminPage.ui" line="186"/>
         <source>Install Date:</source>
         <translation>安装日期:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="252"/>
+        <location filename="AdminPage.ui" line="261"/>
         <source>La Rep Date:</source>
         <translation>上次维修日期:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="344"/>
+        <location filename="AdminPage.ui" line="366"/>
         <source>Proto:</source>
         <oldsource>Protocol:</oldsource>
         <translation>协议:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="358"/>
+        <location filename="AdminPage.ui" line="380"/>
         <source>CXTH</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="405"/>
+        <location filename="AdminPage.ui" line="440"/>
         <source>Conne:</source>
         <oldsource>Connector:</oldsource>
         <translation>接口:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="455"/>
+        <location filename="AdminPage.ui" line="490"/>
         <source>Pmax:</source>
         <translation>最大压力:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="472"/>
+        <location filename="AdminPage.ui" line="507"/>
         <source>MPa</source>
         <translation></translation>
     </message>
@@ -152,7 +152,7 @@
         <translation type="obsolete">旧</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="363"/>
+        <location filename="AdminPage.ui" line="385"/>
         <source>Clarity</source>
         <oldsource>Clarity_</oldsource>
         <translation></translation>
@@ -162,12 +162,12 @@
         <translation type="obsolete">上传接口：</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="419"/>
+        <location filename="AdminPage.ui" line="454"/>
         <source>RS232</source>
         <translation>标准串口</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="424"/>
+        <location filename="AdminPage.ui" line="459"/>
         <source>RJ45</source>
         <translation>以太网口</translation>
     </message>
@@ -180,12 +180,12 @@
         <translation type="obsolete">安装时间:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="124"/>
-        <location filename="AdminPage.ui" line="141"/>
-        <location filename="AdminPage.ui" line="199"/>
-        <location filename="AdminPage.ui" line="216"/>
-        <location filename="AdminPage.ui" line="271"/>
-        <location filename="AdminPage.ui" line="288"/>
+        <location filename="AdminPage.ui" line="133"/>
+        <location filename="AdminPage.ui" line="150"/>
+        <location filename="AdminPage.ui" line="208"/>
+        <location filename="AdminPage.ui" line="225"/>
+        <location filename="AdminPage.ui" line="280"/>
+        <location filename="AdminPage.ui" line="297"/>
         <source>-</source>
         <translation></translation>
     </message>
@@ -194,13 +194,13 @@
         <translation type="obsolete">版本:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="324"/>
+        <location filename="AdminPage.ui" line="333"/>
         <source>Licen:</source>
         <oldsource>License:</oldsource>
         <translation>许可证:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="388"/>
+        <location filename="AdminPage.ui" line="410"/>
         <source>Serial:</source>
         <translation>序列号:</translation>
     </message>
@@ -268,30 +268,30 @@
     </message>
     <message>
         <location filename="bottomwidget.ui" line="33"/>
-        <location filename="bottomwidget.cpp" line="100"/>
+        <location filename="bottomwidget.cpp" line="102"/>
         <source>Run</source>
         <translation>运行</translation>
     </message>
     <message>
         <location filename="bottomwidget.ui" line="46"/>
-        <location filename="bottomwidget.cpp" line="101"/>
+        <location filename="bottomwidget.cpp" line="103"/>
         <source>Param</source>
         <translation>参数</translation>
     </message>
     <message>
         <location filename="bottomwidget.ui" line="59"/>
-        <location filename="bottomwidget.cpp" line="102"/>
+        <location filename="bottomwidget.cpp" line="104"/>
         <source>Setup</source>
         <translation>设置</translation>
     </message>
     <message>
         <location filename="bottomwidget.ui" line="72"/>
-        <location filename="bottomwidget.cpp" line="103"/>
+        <location filename="bottomwidget.cpp" line="105"/>
         <source>Debug</source>
         <translation>调试</translation>
     </message>
     <message>
-        <location filename="bottomwidget.cpp" line="26"/>
+        <location filename="bottomwidget.cpp" line="28"/>
         <source>No Warn</source>
         <translation></translation>
     </message>
@@ -509,22 +509,27 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="FlowFixPage.ui" line="197"/>
+        <location filename="FlowFixPage.ui" line="188"/>
+        <source>30</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="FlowFixPage.ui" line="202"/>
         <source>min</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="FlowFixPage.ui" line="225"/>
+        <location filename="FlowFixPage.ui" line="230"/>
         <source>Start</source>
         <translation>开始</translation>
     </message>
     <message>
-        <location filename="FlowFixPage.ui" line="244"/>
+        <location filename="FlowFixPage.ui" line="249"/>
         <source>Save</source>
         <translation>保存</translation>
     </message>
     <message>
-        <location filename="FlowFixPage.ui" line="257"/>
+        <location filename="FlowFixPage.ui" line="262"/>
         <source>Back</source>
         <translation>返回</translation>
     </message>
@@ -537,22 +542,22 @@
         <translation>GLP信息</translation>
     </message>
     <message>
-        <location filename="glpinfopage.cpp" line="147"/>
+        <location filename="glpinfopage.cpp" line="149"/>
         <source>Day</source>
         <translation>天</translation>
     </message>
     <message>
-        <location filename="glpinfopage.cpp" line="147"/>
+        <location filename="glpinfopage.cpp" line="149"/>
         <source>Hour</source>
         <translation>时</translation>
     </message>
     <message>
-        <location filename="glpinfopage.cpp" line="147"/>
+        <location filename="glpinfopage.cpp" line="149"/>
         <source>Min</source>
         <translation>分</translation>
     </message>
     <message>
-        <location filename="glpinfopage.cpp" line="147"/>
+        <location filename="glpinfopage.cpp" line="149"/>
         <source>Sec</source>
         <translation>秒</translation>
     </message>
@@ -645,7 +650,7 @@
     <message>
         <location filename="glpinfopage.ui" line="208"/>
         <source>Pump Run Count:</source>
-        <translation>注液塞运行次数:</translation>
+        <translation>柱塞运行次数:</translation>
     </message>
     <message>
         <location filename="glpinfopage.ui" line="221"/>
@@ -929,19 +934,24 @@
 <context>
     <name>MachineStat</name>
     <message>
-        <location filename="machinestat.cpp" line="1162"/>
+        <location filename="machinestat.cpp" line="1173"/>
         <source>No Warn</source>
         <translation>正常</translation>
     </message>
     <message>
-        <location filename="machinestat.cpp" line="1170"/>
+        <location filename="machinestat.cpp" line="1181"/>
         <source>Com error!</source>
         <translation>通信出错！</translation>
     </message>
     <message>
-        <location filename="machinestat.cpp" line="1184"/>
+        <location filename="machinestat.cpp" line="1195"/>
         <source>Press over:</source>
         <translation>过压:</translation>
+    </message>
+    <message>
+        <location filename="machinestat.cpp" line="1207"/>
+        <source>Weeping:</source>
+        <translation>漏液:</translation>
     </message>
 </context>
 <context>

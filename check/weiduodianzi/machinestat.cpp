@@ -284,6 +284,8 @@ void MachineStat::initMachineStat()
 		}
     }
 	
+	noRTCBattery = false;//
+
 	DataBase::getInstance()->updateDate("last_time", QString::number(now));
 	system(QString("hwclock -s").toLatin1().data());
 #endif

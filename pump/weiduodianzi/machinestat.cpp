@@ -455,8 +455,17 @@ void MachineStat::pcCtrlMachine()
 float MachineStat::GetWordFactor()
 {
 	int selectindex = DataBase::getInstance()->queryData("pumptype").toInt(); 
-	float pumpMaxFlowArray[]={6,1.5,0.245,0.11,0.05,0.025,0.008333};//张杰华修改@2016-06-14，将50ml脉冲系数3.3改成1.5
-	if(selectindex>6)
+	//float pumpMaxFlowArray[]={6,1.5,0.245,0.11,0.05,0.025,0.008333};//张杰华修改@2016-06-14，将50ml脉冲系数3.3改成1.5
+	float pumpMaxFlowArray[]={6,1.5,0.245,
+		0.11,
+		0.11,
+		0.05,
+		0.05,
+		0.025,
+		0.025,
+		0.008333,
+		0.008333};//张杰华修改@2016-06-14，将50ml脉冲系数3.3改成1.5
+	if(selectindex>10)
 	{
 		selectindex=0;
 	}
@@ -608,8 +617,8 @@ quint32 MachineStat::updateFlowByGradientList(quint32 time)
 double MachineStat::compensationForPress(uint32 arg)
 {
 	double v0 = pDb->queryData("pressRawV0").toDouble();
-	//double val = ((double)arg-v0)*0.01;
-	double val = ((double)arg-v0)*0.015;
+	double val = ((double)arg-v0)*0.01;
+	//double val = ((double)arg-v0)*0.015;
 	QList<LineUint> &pressCompensationList = pDb->getPressCompensationList();
 	for (int i = 0; i < pressCompensationList.count(); i++)
 	{
@@ -862,6 +871,9 @@ void MachineStat::updateStartupTime()
 	}
 
 	m_machineStat.m_nSysUsedTime++;//系统使用时间;
+
+	//static int cnt = 0;
+	//emit(updateBugleCnt(cnt++));
 }
 
 quint64 MachineStat::generateActiveCode( quint64 sertialNum, quint8 which )
@@ -1140,13 +1152,25 @@ bool MachineStat::checkFlowOverLoaded(double flow)
 
 quint32 MachineStat::getMaxFlow()
 {
-	quint32 pumpMaxFlowArray[]={10,50,100,250,500,1000,3000};
+	//quint32 pumpMaxFlowArray[]={10,50,100,250,500,1000,3000};
+	quint32 pumpMaxFlowArray[]={10,50,100,150,250,300,500,800,1000,2000,3000};
 	quint32 index = DataBase::getInstance()->queryData("pumptype").toInt();
-	if(index > 6)
+	if(index > 10)
 		return 0;
 	return pumpMaxFlowArray[index];
 	
 }
+
+quint32 MachineStat::getMaxPress()
+{
+	quint32 pumpMaxPressArray[]={42, 25 , 20, 20, 20, 15, 15, 10, 10, 10, 10};
+	quint32 index = DataBase::getInstance()->queryData("pumptype").toInt();
+	if(index > 10)
+		return 0;
+	return pumpMaxPressArray[index];
+
+}
+
 
 void MachineStat::sysError( int number, bool insert )
 {
@@ -1299,9 +1323,9 @@ quint32 MachineStat::getMachineCode()
 void MachineStat::updateMachineCode()
 {
 	quint32 nPumpType = DataBase::getInstance()->queryData("pumptype").toInt();
-	quint32 nCode[7] = {0x12, 0x13, 0x20, 0x21, 0x22, 0x23, 0x24};
-
-	nPumpType %= 7;
+	//quint32 nCode[7] = {0x12, 0x13, 0x20, 0x21, 0x22, 0x23, 0x24};
+	quint32 nCode[11] = {0x12, 0x13, 0x20, 0x25, 0x21, 0x26, 0x22, 0x27, 0x23, 0x28, 0x24};
+	nPumpType %= 11;
 	g_MachineCode = nCode[nPumpType];
 }
 

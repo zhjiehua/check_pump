@@ -60,6 +60,7 @@ void ScanPage::initFocusList()
 	connect(ui.uploadWhichCombo, SIGNAL(currentIndexChanged(int)), MachineStat::getInstance(), SLOT(setUploadPcValChanel(int)) );
 	connect(MachineStat::getInstance(), SIGNAL(wLenScanDone()), this, SLOT(scanDone()) );
 
+	MachineStat::getInstance()->pwdOK = true;
 
 	if(MachineStat::getInstance()->pwdOK)
 		MachineStat::getInstance()->pwdNeed = false;

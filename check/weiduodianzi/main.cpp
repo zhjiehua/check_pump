@@ -5,6 +5,7 @@
 	2016-08-17		V0.92		解决模拟口的bug						zhjiehua
 	2016-09-01		V0.93		添加灯源密码，调整灯源记录表格式
 								修正Clarity协议的上传频率bug		zhjiehua
+	2016-10-17		V0.94		去掉电池检测						zhjiehua
 */
 
 #include "baseMainPage.h"

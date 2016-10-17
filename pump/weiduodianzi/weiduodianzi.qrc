@@ -41,8 +41,6 @@
         <file>ui/user.png</file>
         <file>weiduodianzi_zh.qm</file>
         <file>weiduodianzi_zh.ts</file>
-        <file>weiduodianzi_zh.qm</file>
-        <file>weiduodianzi_zh.ts</file>
         <file>ui/weeping.png</file>
     </qresource>
 </RCC>

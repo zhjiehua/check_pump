@@ -990,7 +990,6 @@
     <None Include="ui\glpinfoFocus.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="icon1.ico" />
     <None Include="ui\light_err.png">
       <Filter>Resource Files</Filter>
     </None>

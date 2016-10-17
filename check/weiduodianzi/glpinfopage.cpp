@@ -116,6 +116,7 @@ void GlpInfoPage::initFocusList()
 	updateUsedTime();
 }
 
+
 bool GlpInfoPage::eventFilter(QObject *obj, QEvent *event)
 {
 	if(event->type() == QEvent::KeyPress )

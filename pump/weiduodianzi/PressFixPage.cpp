@@ -81,7 +81,7 @@ void PressFixPage::initDisplay()
 	if(pumpType > 6)
 	pumpType = 0;
 	double maxFlow = array[pumpType];*/
-	double maxFlow = MachineStat::getInstance()->getMaxFlow();
+	double maxFlow = MachineStat::getInstance()->getMaxPress();
 	//ui.flowEdit->setValRange("flowRate", 0, maxFlow, 4);
 	if(DataBase::getInstance()->queryData("pumptype").toInt() == 0)//10ml泵
 		ui.flowEdit->setValRange("pumpPurgeFlowVal", 0, maxFlow, 4);//张杰华修改@2016-06-28，将小数点位数改成1个，无效？？

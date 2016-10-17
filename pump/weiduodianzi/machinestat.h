@@ -139,6 +139,7 @@ public:
 	void initIPAddr();//初始化ip地址;
 	void setNetWorkConfig(MachineStat::E_IPConfig eConfig);//配置本地和远程IP/PORT
 	quint32 getMaxFlow();//获取流速最大值;
+	quint32 getMaxPress();//获取流速最大值;
 
 	FlowCtrl *getFlowCtrl();
 

@@ -683,9 +683,13 @@ void DataBase::restoreDefPressCompenTable(int pumpType)
 				tbl[35]=1;
 			}
 		case DEF_COMPEN_TBL_100ML:
+		case DEF_COMPEN_TBL_150ML:
 		case DEF_COMPEN_TBL_250ML:
+		case DEF_COMPEN_TBL_300ML:
 		case DEF_COMPEN_TBL_500ML:
+		case DEF_COMPEN_TBL_800ML:
 		case DEF_COMPEN_TBL_1000ML:
+		case DEF_COMPEN_TBL_2000ML:
 		case DEF_COMPEN_TBL_3000ML:
 			{
 				tbl[0.1]=1;
@@ -768,6 +772,20 @@ void DataBase::restoreDefFlowCompenTable(int pumpType)
 			tbl[100]=1;
 		}
 		break;
+	case DEF_COMPEN_TBL_150ML:
+		{
+			tbl[2]=1;
+			tbl[5]=1;
+			tbl[10]=1;
+			tbl[20]=1;
+			tbl[40]=1;
+			tbl[60]=1;
+			tbl[80]=1;
+			tbl[100]=1;
+			tbl[125]=1;
+			tbl[150]=1;
+		}
+		break;
 	case DEF_COMPEN_TBL_250ML:
 		{
 			tbl[2]=1;
@@ -780,6 +798,20 @@ void DataBase::restoreDefFlowCompenTable(int pumpType)
 			tbl[200]=1;
 			tbl[210]=1;
 			tbl[250]=1;
+		}
+		break;
+	case DEF_COMPEN_TBL_300ML:
+		{
+			tbl[5]=1;
+			tbl[10]=1;
+			tbl[20]=1;
+			tbl[40]=1;
+			tbl[70]=1;
+			tbl[100]=1;
+			tbl[150]=1;
+			tbl[200]=1;
+			tbl[250]=1;
+			tbl[300]=1;
 		}
 		break;
 	case DEF_COMPEN_TBL_500ML:
@@ -796,6 +828,20 @@ void DataBase::restoreDefFlowCompenTable(int pumpType)
 			tbl[500]=1;
 		}
 		break;
+	case DEF_COMPEN_TBL_800ML:
+		{
+			tbl[10]=1;
+			tbl[20]=1;
+			tbl[40]=1;
+			tbl[80]=1;
+			tbl[150]=1;
+			tbl[250]=1;
+			tbl[350]=1;
+			tbl[500]=1;
+			tbl[650]=1;
+			tbl[800]=1;
+		}
+		break;
 	case DEF_COMPEN_TBL_1000ML:
 		{
 			tbl[10]=1;
@@ -808,6 +854,20 @@ void DataBase::restoreDefFlowCompenTable(int pumpType)
 			tbl[800]=1;
 			tbl[850]=1;
 			tbl[1000]=1;
+		}
+		break;
+	case DEF_COMPEN_TBL_2000ML:
+		{
+			tbl[30]=1;
+			tbl[60]=1;
+			tbl[120]=1;
+			tbl[240]=1;
+			tbl[500]=1;
+			tbl[750]=1;
+			tbl[1000]=1;
+			tbl[1300]=1;
+			tbl[1600]=1;
+			tbl[2000]=1;
 		}
 		break;
 	case DEF_COMPEN_TBL_3000ML:
