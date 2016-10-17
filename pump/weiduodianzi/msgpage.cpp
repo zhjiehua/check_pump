@@ -5,7 +5,7 @@
 #include "msgbox.h"
 #include <QFile>
 
-#define VERSION					"V0.94"
+#define VERSION					"V0.96"
 
 #ifdef WIN32
 #define SRCFILE			"H:/weiduodianzi.txt"
