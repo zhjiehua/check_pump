@@ -44,3 +44,12 @@ pump/Win32/
 pump/weiduodianzi/Debug/
 pump/weiduodianzi/GeneratedFiles/
 
+check/weiduodianzi.sdf
+check/weiduodianzi.suo
+check/weiduodianzi/wda.db
+check/weiduodianzi/wda.db-journal
+
+pump/weiduodianzi.sdf
+pump/weiduodianzi.suo
+pump/weiduodianzi/wda.db
+pump/weiduodianzi/wda.db-journal
