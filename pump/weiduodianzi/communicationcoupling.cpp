@@ -2,6 +2,12 @@
 #include "machinestat.h"
 #include "timehelper.h"
 
+#ifdef WIN32
+#include <windows.h>
+#else
+#include <sys/unistd.h>
+#endif
+
 extern bool bSyncFlag;
 
 extern QHostAddress remoteAddrTemp;
@@ -168,6 +174,11 @@ void CommunicationCoupling::processCmd4Pc(quint8 type, quint32 cmd, quint32 arg,
 			if(m_pMachine->getMachineStat() != MachineStat::PCCTRL)
 			{
 				m_pMachine->setMachineStat(MachineStat::PURGE); //张杰华修改@2016-06-25
+#ifdef WIN32
+				Sleep(5);
+#else
+				usleep(5000);//加一点延时，防止MCU收不到下面的流速指令
+#endif
 				m_pMachine->syncFlowFromPc();//modified by wjf@2016-06-22;  //其实这里会不太严谨，上一句已经向MCU发送数据库的流速，这句是发PC发过来的流速给MCU
 			}
 		}
@@ -327,6 +338,11 @@ void CommunicationCoupling::processCmd4PcClarity( quint8 hID, quint32 hAI, quint
 			if(m_pMachine->getMachineStat() != MachineStat::PCCTRL)
 			{
 				m_pMachine->setMachineStat(MachineStat::PURGE); //张杰华修改@2016-06-25
+#ifdef WIN32
+				Sleep(5);
+#else
+				usleep(5000);//加一点延时，防止MCU收不到下面的流速指令
+#endif
 				m_pMachine->syncFlowFromPc();//modified by wjf@2016-06-22;  //其实这里会不太严谨，上一句已经向MCU发送数据库的流速，这句是发PC发过来的流速给MCU
 			}
 

@@ -588,11 +588,16 @@ void MachineStat::syncTime(quint32 time)
 
 	m_nPcGradientCtrlFlag = 0;
 
+	if(bOverPress)//张杰华添加@2016-07-26
+		return;
+
+	m_machineStat.m_bUpdateFlowFromPc = false;//张杰华添加@2016-06-25，解决pc端同步流速时的显示问题
+
 	//张杰华添加@2016-06-20，如果压力报警，则不同步流速
-	if(!bSyncOverPress)
-	{
-		syncFlowFromPc();
-	}
+	//if(!bSyncOverPress)
+	//{
+		//syncFlowFromPc();
+	//}
 }
 
 quint32 MachineStat::updateFlowByGradientList(quint32 time)
