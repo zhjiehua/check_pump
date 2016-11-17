@@ -231,6 +231,8 @@ public:
 
 	bool m_bSetWaveAfterHome;
 
+	bool m_bClaritySetFreq;
+
 	EWLEN whichLen;
 	quint32 getWeightedAverage(QVector<quint32> &myVector);
 	double getWeightedAverage(QVector<double> &myVector);

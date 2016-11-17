@@ -96,6 +96,8 @@ void CommunicationCoupling::processCmd4Pc(quint8 type, quint32 cmd, quint32 arg,
 	//TimeHelper::getComSem()->acquire();
 	QString strDisp("");
 
+	static quint8 pumpState = 0;
+
 	remoteAddr = remoteAddrTemp;
 	remotePort = remotePortTemp;
 
@@ -140,7 +142,8 @@ void CommunicationCoupling::processCmd4Pc(quint8 type, quint32 cmd, quint32 arg,
 			m_pMachine->updateFlow(val, MachineStat::PC_MODE);
 
 			//张杰华添加@2016-07-26
-			if(m_pMachine->getMachineStat() == MachineStat::PCCTRL || m_pMachine->getMachineStat() == MachineStat::PURGE)
+			//if(m_pMachine->getMachineStat() == MachineStat::PCCTRL || m_pMachine->getMachineStat() == MachineStat::PURGE)
+			if(pumpState == 1)
 			{
 				m_pMachine->syncFlowFromPc();
 			}
@@ -171,6 +174,9 @@ void CommunicationCoupling::processCmd4Pc(quint8 type, quint32 cmd, quint32 arg,
 	case PFC_START:
 		{
 			strDisp = QString("start");
+
+			pumpState = 1;
+
 			if(m_pMachine->getMachineStat() != MachineStat::PCCTRL)
 			{
 				m_pMachine->setMachineStat(MachineStat::PURGE); //张杰华修改@2016-06-25
@@ -186,6 +192,9 @@ void CommunicationCoupling::processCmd4Pc(quint8 type, quint32 cmd, quint32 arg,
 	case PFC_STOP:
 		{
 			strDisp = QString("stop");
+
+			pumpState = 0;
+
 			m_pMachine->setMachineStat(MachineStat::STOP);
 		}
 		break;
@@ -210,6 +219,8 @@ void CommunicationCoupling::processCmd4PcClarity( quint8 hID, quint32 hAI, quint
 		return;
 
 	QString strDisp;
+
+	static quint8 pumpState = 0;
 
 	remoteAddr = remoteAddrTemp;
 	remotePort = remotePortTemp;
@@ -287,7 +298,8 @@ void CommunicationCoupling::processCmd4PcClarity( quint8 hID, quint32 hAI, quint
 			m_pMachine->updateFlow(val, MachineStat::PC_MODE);
 
 			//张杰华添加@2016-07-26
-			if(m_pMachine->getMachineStat() == MachineStat::PCCTRL || m_pMachine->getMachineStat() == MachineStat::PURGE)
+			//if(m_pMachine->getMachineStat() == MachineStat::PCCTRL || m_pMachine->getMachineStat() == MachineStat::PURGE)
+			if(pumpState == 1)
 			{
 				m_pMachine->syncFlowFromPc();
 			}
@@ -331,6 +343,9 @@ void CommunicationCoupling::processCmd4PcClarity( quint8 hID, quint32 hAI, quint
 	case PFCC_PUMPSTART:
 		{
 			strDisp = QString("pump start;");
+
+			pumpState = 1;
+
 			////m_pMachine->setMachineStat(MachineStat::PCCTRL);
 			//m_pMachine->setMachineStat(MachineStat::PURGE);//张杰华修改@2016-07-01
 			//m_pMachine->syncFlowFromPc();//张杰华修改@2016-07-01
@@ -351,6 +366,8 @@ void CommunicationCoupling::processCmd4PcClarity( quint8 hID, quint32 hAI, quint
 		break;
 	case PFCC_PUMPSTOP:
 		{
+			pumpState = 0;
+
 			m_pMachine->setMachineStat(MachineStat::STOP);
 			sendClarityACK();
 		}

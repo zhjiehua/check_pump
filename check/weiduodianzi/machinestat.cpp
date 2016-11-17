@@ -94,6 +94,7 @@ MachineStat::MachineStat(QObject *parent)
 	,m_nReadAuCnt(0)
 	,m_nDouleWaveEqualReadAuCnt(0)
 	,m_bSetWaveAfterHome(false)
+	,m_bClaritySetFreq(false)
 	,pwdOK(false)
 	,pwdNeed(false)
 	,noRTCBattery(false)
@@ -299,7 +300,6 @@ void MachineStat::clearTime(MachineTime time)
 	{
 		clearStartupTime();
 
-
 		//张杰华添加@2016-06-23
 		g_pMainWindow->navigatorPageAt(0);
 	}
@@ -419,6 +419,7 @@ void MachineStat::deRegisterTimeoutFunc( pTimeoutFunc pFunc )
 
 QString g_sTime;
 
+/*上传AU值函数*/
 void MachineStat::auUploadTimeOut()
 {
 	if(!m_bHomeInitSuccess)//未完成原点前不能下发命令给MCU，否则导致找原点不准
@@ -1421,6 +1422,10 @@ qint32 MachineStat::uploadAuToPc()
 //#endif
 
 	quint32 pcProtocol = DataBase::getInstance()->queryData("pcProtocol").toInt();
+
+	if(pcProtocol!=0  && !m_bClaritySetFreq)//clarity协议要修改了频率才上传Au
+		return 0;
+
 	/*double au = 0.132081;
 	double au = -0.080012;
 	m_pCommunicationCoupling->sendCmdClarity(0, PFCC_SEND_AU, changeAuValtoClarity(au));

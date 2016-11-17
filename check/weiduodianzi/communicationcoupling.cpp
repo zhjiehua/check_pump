@@ -516,6 +516,7 @@ void CommunicationCoupling::processCmd4PcClarity(quint8 hID, quint32 hAI, quint3
 			//m_pMachine->setUploadAuFreq(!!hVal);
 			hVal = QString::number(hVal, 16).toInt();
 			m_pMachine->setUploadAuFreq(hVal);
+			m_pMachine->m_bClaritySetFreq = true;
 			sendClarityACK();
 		}
 		break;
