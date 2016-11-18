@@ -8,6 +8,7 @@
 	2016-10-17		V0.94		去掉电池检测						zhjiehua
 	2016-11-17		V0.95		Clarity协议流程修改：开机后要PC修改完上传频率才开始上传Au值
 																	zhjiehua
+	2016-11-17		V0.96		Clarity协议的时间跟上传频率无关		zhjiehua
 */
 
 #include "baseMainPage.h"

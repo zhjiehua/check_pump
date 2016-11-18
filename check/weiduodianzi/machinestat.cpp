@@ -427,14 +427,21 @@ void MachineStat::auUploadTimeOut()
 		return;
 	}
 
+	quint32 pcProtocol = DataBase::getInstance()->queryData("pcProtocol").toInt();
+
 	m_nAuUploadTimeCnt++;
 	if(m_nAuUploadTime > 0 && m_nAuUploadTimeCnt >= m_nAuUploadTime)
 	{
 		m_nAuUploadTimeCnt = 0;
 
 		if(uploadAuToPc() != -1)
-			m_nStartupTimeMsec++;
+		{
+			if(pcProtocol == 0) 
+				m_nStartupTimeMsec++;
+		}
 	}
+	if(pcProtocol != 0)
+		m_nStartupTimeMsec++;
 
 	quint32 ch = DataBase::getInstance()->queryData("chanel").toInt();
 #if 1
