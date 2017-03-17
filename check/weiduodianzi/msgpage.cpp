@@ -29,6 +29,9 @@ MsgPage::MsgPage(QWidget *parent /*= 0*/, quint8 index, quint8 previndex, quint3
 	ui.labelLicensex->setText(DataBase::getInstance()->queryData("license"));
 	ui.labelSerialx->setText(DataBase::getInstance()->queryData("serial"));
 
+	ui.saveDataBtn->hide();
+	ui.updateDataBtn->hide();
+
 	setStyleSheet("QPushButton:focus{border:2px solid blue;outline:0px;}");
 }
 
@@ -40,12 +43,12 @@ MsgPage::~MsgPage()
 void MsgPage::initFocusList()
 {
 	//ui.updateBtn->setFocus();
-	xList.append(ui.saveDataBtn);
-	xList.append(ui.updateDataBtn);
+	//xList.append(ui.saveDataBtn);
+	//xList.append(ui.updateDataBtn);
 	xList.append(ui.updateBtn);
 
-	yList.append(ui.saveDataBtn);
-	yList.append(ui.updateDataBtn);
+	//yList.append(ui.saveDataBtn);
+	//yList.append(ui.updateDataBtn);
 	yList.append(ui.updateBtn);
 }
 

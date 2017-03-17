@@ -4,7 +4,7 @@
 <context>
     <name>AdminPage</name>
     <message id="0">
-        <location filename="AdminPage.cpp" line="10"/>
+        <location filename="AdminPage.cpp" line="27"/>
         <location filename="FixPage.cpp" line="6"/>
         <location filename="glpinfopage.cpp" line="13"/>
         <location filename="GradientPage.cpp" line="21"/>
@@ -29,35 +29,65 @@
         <translation>权限页面</translation>
     </message>
     <message>
-        <location filename="AdminPage.cpp" line="13"/>
+        <location filename="AdminPage.cpp" line="30"/>
         <source>Admin</source>
         <translation>管理员</translation>
     </message>
     <message>
-        <location filename="AdminPage.cpp" line="80"/>
-        <location filename="AdminPage.cpp" line="90"/>
-        <location filename="AdminPage.cpp" line="97"/>
-        <location filename="AdminPage.cpp" line="137"/>
+        <location filename="AdminPage.cpp" line="101"/>
+        <location filename="AdminPage.cpp" line="111"/>
+        <location filename="AdminPage.cpp" line="118"/>
+        <location filename="AdminPage.cpp" line="158"/>
+        <location filename="AdminPage.cpp" line="185"/>
+        <location filename="AdminPage.cpp" line="195"/>
+        <location filename="AdminPage.cpp" line="200"/>
+        <location filename="AdminPage.cpp" line="208"/>
+        <location filename="AdminPage.cpp" line="216"/>
+        <location filename="AdminPage.cpp" line="226"/>
+        <location filename="AdminPage.cpp" line="231"/>
         <source>Tips</source>
         <translation>温馨提示</translation>
     </message>
     <message>
-        <location filename="AdminPage.cpp" line="80"/>
+        <location filename="AdminPage.cpp" line="101"/>
         <source>Comfirm to Cancel Active!!!</source>
         <translation>是否取消激活!!!</translation>
     </message>
     <message>
-        <location filename="AdminPage.cpp" line="137"/>
+        <location filename="AdminPage.cpp" line="158"/>
         <source>Comfirm to Restore!!!</source>
         <translation>是否恢复出厂设置!!!</translation>
+    </message>
+    <message>
+        <location filename="AdminPage.cpp" line="185"/>
+        <location filename="AdminPage.cpp" line="216"/>
+        <source>file not found!</source>
+        <translation>文件不存在!</translation>
+    </message>
+    <message>
+        <location filename="AdminPage.cpp" line="195"/>
+        <location filename="AdminPage.cpp" line="226"/>
+        <source>success!</source>
+        <translation>成功!</translation>
+    </message>
+    <message>
+        <location filename="AdminPage.cpp" line="200"/>
+        <location filename="AdminPage.cpp" line="231"/>
+        <source>failed!</source>
+        <translation>失败！</translation>
+    </message>
+    <message>
+        <location filename="AdminPage.cpp" line="208"/>
+        <source>Comfirm to update data?</source>
+        <translation>确定更新数据?</translation>
     </message>
     <message>
         <source>Comfirm to Active!!!</source>
         <translation type="obsolete">请确认激活!!!</translation>
     </message>
     <message>
-        <location filename="AdminPage.cpp" line="90"/>
-        <location filename="AdminPage.cpp" line="97"/>
+        <location filename="AdminPage.cpp" line="111"/>
+        <location filename="AdminPage.cpp" line="118"/>
         <source>Comfirm to Clear!!!</source>
         <translation>请确认清楚!!!</translation>
     </message>
@@ -93,7 +123,19 @@
         <translation>恢复</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="114"/>
+        <location filename="AdminPage.ui" line="120"/>
+        <source>saveData</source>
+        <oldsource>saveDataBtn</oldsource>
+        <translation>保存数据</translation>
+    </message>
+    <message>
+        <location filename="AdminPage.ui" line="127"/>
+        <source>updateData</source>
+        <oldsource>updateDataBtn</oldsource>
+        <translation>更新数据</translation>
+    </message>
+    <message>
+        <location filename="AdminPage.ui" line="151"/>
         <source>Manuf Date:</source>
         <translation>生产日期:</translation>
     </message>
@@ -102,39 +144,39 @@
         <translation type="obsolete">安装日期:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="186"/>
+        <location filename="AdminPage.ui" line="223"/>
         <source>Install Date:</source>
         <translation>安装日期:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="261"/>
+        <location filename="AdminPage.ui" line="298"/>
         <source>La Rep Date:</source>
         <translation>上次维修日期:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="366"/>
+        <location filename="AdminPage.ui" line="403"/>
         <source>Proto:</source>
         <oldsource>Protocol:</oldsource>
         <translation>协议:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="380"/>
+        <location filename="AdminPage.ui" line="417"/>
         <source>CXTH</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="440"/>
+        <location filename="AdminPage.ui" line="477"/>
         <source>Conne:</source>
         <oldsource>Connector:</oldsource>
         <translation>接口:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="490"/>
+        <location filename="AdminPage.ui" line="527"/>
         <source>Pmax:</source>
         <translation>最大压力:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="507"/>
+        <location filename="AdminPage.ui" line="544"/>
         <source>MPa</source>
         <translation></translation>
     </message>
@@ -152,7 +194,7 @@
         <translation type="obsolete">旧</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="385"/>
+        <location filename="AdminPage.ui" line="422"/>
         <source>Clarity</source>
         <oldsource>Clarity_</oldsource>
         <translation></translation>
@@ -162,12 +204,12 @@
         <translation type="obsolete">上传接口：</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="454"/>
+        <location filename="AdminPage.ui" line="491"/>
         <source>RS232</source>
         <translation>标准串口</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="459"/>
+        <location filename="AdminPage.ui" line="496"/>
         <source>RJ45</source>
         <translation>以太网口</translation>
     </message>
@@ -180,12 +222,12 @@
         <translation type="obsolete">安装时间:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="133"/>
-        <location filename="AdminPage.ui" line="150"/>
-        <location filename="AdminPage.ui" line="208"/>
-        <location filename="AdminPage.ui" line="225"/>
-        <location filename="AdminPage.ui" line="280"/>
-        <location filename="AdminPage.ui" line="297"/>
+        <location filename="AdminPage.ui" line="170"/>
+        <location filename="AdminPage.ui" line="187"/>
+        <location filename="AdminPage.ui" line="245"/>
+        <location filename="AdminPage.ui" line="262"/>
+        <location filename="AdminPage.ui" line="317"/>
+        <location filename="AdminPage.ui" line="334"/>
         <source>-</source>
         <translation></translation>
     </message>
@@ -194,13 +236,13 @@
         <translation type="obsolete">版本:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="333"/>
+        <location filename="AdminPage.ui" line="370"/>
         <source>Licen:</source>
         <oldsource>License:</oldsource>
         <translation>许可证:</translation>
     </message>
     <message>
-        <location filename="AdminPage.ui" line="410"/>
+        <location filename="AdminPage.ui" line="447"/>
         <source>Serial:</source>
         <translation>序列号:</translation>
     </message>
@@ -542,22 +584,22 @@
         <translation>GLP信息</translation>
     </message>
     <message>
-        <location filename="glpinfopage.cpp" line="149"/>
+        <location filename="glpinfopage.cpp" line="153"/>
         <source>Day</source>
         <translation>天</translation>
     </message>
     <message>
-        <location filename="glpinfopage.cpp" line="149"/>
+        <location filename="glpinfopage.cpp" line="153"/>
         <source>Hour</source>
         <translation>时</translation>
     </message>
     <message>
-        <location filename="glpinfopage.cpp" line="149"/>
+        <location filename="glpinfopage.cpp" line="153"/>
         <source>Min</source>
         <translation>分</translation>
     </message>
     <message>
-        <location filename="glpinfopage.cpp" line="149"/>
+        <location filename="glpinfopage.cpp" line="153"/>
         <source>Sec</source>
         <translation>秒</translation>
     </message>
@@ -623,27 +665,47 @@
     </message>
     <message>
         <location filename="glpinfopage.ui" line="336"/>
-        <source>250</source>
+        <source>150</source>
         <translation></translation>
     </message>
     <message>
         <location filename="glpinfopage.ui" line="341"/>
-        <source>500</source>
+        <source>250</source>
         <translation></translation>
     </message>
     <message>
         <location filename="glpinfopage.ui" line="346"/>
-        <source>1000</source>
+        <source>300</source>
         <translation></translation>
     </message>
     <message>
         <location filename="glpinfopage.ui" line="351"/>
+        <source>500</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="glpinfopage.ui" line="356"/>
+        <source>800</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="glpinfopage.ui" line="361"/>
+        <source>1000</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="glpinfopage.ui" line="366"/>
+        <source>2000</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="glpinfopage.ui" line="371"/>
         <source>3000</source>
         <translation></translation>
     </message>
     <message>
         <location filename="glpinfopage.ui" line="277"/>
-        <location filename="glpinfopage.ui" line="365"/>
+        <location filename="glpinfopage.ui" line="385"/>
         <source>mL</source>
         <translation></translation>
     </message>
@@ -934,22 +996,22 @@
 <context>
     <name>MachineStat</name>
     <message>
-        <location filename="machinestat.cpp" line="1173"/>
+        <location filename="machinestat.cpp" line="1200"/>
         <source>No Warn</source>
         <translation>正常</translation>
     </message>
     <message>
-        <location filename="machinestat.cpp" line="1181"/>
+        <location filename="machinestat.cpp" line="1208"/>
         <source>Com error!</source>
         <translation>通信出错！</translation>
     </message>
     <message>
-        <location filename="machinestat.cpp" line="1195"/>
+        <location filename="machinestat.cpp" line="1222"/>
         <source>Press over:</source>
         <translation>过压:</translation>
     </message>
     <message>
-        <location filename="machinestat.cpp" line="1207"/>
+        <location filename="machinestat.cpp" line="1234"/>
         <source>Weeping:</source>
         <translation>漏液:</translation>
     </message>
@@ -966,48 +1028,48 @@
         <translation>关于</translation>
     </message>
     <message>
-        <location filename="msgpage.cpp" line="65"/>
-        <location filename="msgpage.cpp" line="73"/>
-        <location filename="msgpage.cpp" line="83"/>
-        <location filename="msgpage.cpp" line="88"/>
-        <location filename="msgpage.cpp" line="101"/>
-        <location filename="msgpage.cpp" line="111"/>
-        <location filename="msgpage.cpp" line="116"/>
-        <location filename="msgpage.cpp" line="124"/>
-        <location filename="msgpage.cpp" line="132"/>
-        <location filename="msgpage.cpp" line="142"/>
-        <location filename="msgpage.cpp" line="147"/>
+        <location filename="msgpage.cpp" line="68"/>
+        <location filename="msgpage.cpp" line="76"/>
+        <location filename="msgpage.cpp" line="86"/>
+        <location filename="msgpage.cpp" line="91"/>
+        <location filename="msgpage.cpp" line="104"/>
+        <location filename="msgpage.cpp" line="114"/>
+        <location filename="msgpage.cpp" line="119"/>
+        <location filename="msgpage.cpp" line="127"/>
+        <location filename="msgpage.cpp" line="135"/>
+        <location filename="msgpage.cpp" line="145"/>
+        <location filename="msgpage.cpp" line="150"/>
         <source>Tips</source>
         <translation>温馨提示</translation>
     </message>
     <message>
-        <location filename="msgpage.cpp" line="65"/>
+        <location filename="msgpage.cpp" line="68"/>
         <source>Comfirm to update program?</source>
         <translation>确定更新程序?</translation>
     </message>
     <message>
-        <location filename="msgpage.cpp" line="73"/>
-        <location filename="msgpage.cpp" line="101"/>
-        <location filename="msgpage.cpp" line="132"/>
+        <location filename="msgpage.cpp" line="76"/>
+        <location filename="msgpage.cpp" line="104"/>
+        <location filename="msgpage.cpp" line="135"/>
         <source>file not found!</source>
         <translation>文件不存在!</translation>
     </message>
     <message>
-        <location filename="msgpage.cpp" line="83"/>
-        <location filename="msgpage.cpp" line="111"/>
-        <location filename="msgpage.cpp" line="142"/>
+        <location filename="msgpage.cpp" line="86"/>
+        <location filename="msgpage.cpp" line="114"/>
+        <location filename="msgpage.cpp" line="145"/>
         <source>success!</source>
         <translation>成功!</translation>
     </message>
     <message>
-        <location filename="msgpage.cpp" line="88"/>
-        <location filename="msgpage.cpp" line="116"/>
-        <location filename="msgpage.cpp" line="147"/>
+        <location filename="msgpage.cpp" line="91"/>
+        <location filename="msgpage.cpp" line="119"/>
+        <location filename="msgpage.cpp" line="150"/>
         <source>failed!</source>
         <translation>失败！</translation>
     </message>
     <message>
-        <location filename="msgpage.cpp" line="124"/>
+        <location filename="msgpage.cpp" line="127"/>
         <source>Comfirm to update data?</source>
         <translation>确定更新数据?</translation>
     </message>

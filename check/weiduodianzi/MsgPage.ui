@@ -271,6 +271,9 @@
        </item>
        <item>
         <widget class="BtnCtrl" name="saveDataBtn">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
          <property name="sizePolicy">
           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
            <horstretch>0</horstretch>
@@ -284,6 +287,9 @@
        </item>
        <item>
         <widget class="BtnCtrl" name="updateDataBtn">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
          <property name="sizePolicy">
           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
            <horstretch>0</horstretch>

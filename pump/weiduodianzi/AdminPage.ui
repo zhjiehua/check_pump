@@ -33,7 +33,7 @@
     <number>0</number>
    </property>
    <item row="0" column="0">
-    <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1,1,1,1,1,1,1,1,1,1,1,1">
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1">
      <property name="spacing">
       <number>6</number>
      </property>
@@ -102,6 +102,43 @@
         <size>
          <width>17</width>
          <height>13</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="1,1">
+       <property name="spacing">
+        <number>12</number>
+       </property>
+       <item>
+        <widget class="BtnCtrl" name="saveDataBtn">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string>saveData</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="BtnCtrl" name="updateDataBtn">
+         <property name="text">
+          <string>updateData</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
         </size>
        </property>
       </spacer>
@@ -529,6 +566,11 @@
  </widget>
  <customwidgets>
   <customwidget>
+   <class>BtnCtrl</class>
+   <extends>QPushButton</extends>
+   <header>btnctrl.h</header>
+  </customwidget>
+  <customwidget>
    <class>ComboCtrl</class>
    <extends>QComboBox</extends>
    <header>comboctrl.h</header>
@@ -537,11 +579,6 @@
    <class>EditCtrl</class>
    <extends>QLineEdit</extends>
    <header>editctrl.h</header>
-  </customwidget>
-  <customwidget>
-   <class>BtnCtrl</class>
-   <extends>QPushButton</extends>
-   <header>btnctrl.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

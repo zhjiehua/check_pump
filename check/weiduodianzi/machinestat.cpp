@@ -273,7 +273,7 @@ void MachineStat::initMachineStat()
             //exit;
 				//while(1);
 				//system(QString("exit").toLatin1().data());
-				noRTCBattery = true;
+//				noRTCBattery = true;
 		}
 		else
 		{
@@ -281,7 +281,7 @@ void MachineStat::initMachineStat()
 				qDebug() << "=======now > last_time";
 				//DataBase::getInstance()->updateDate("last_time", QString::number(now));
 
-				noRTCBattery = false;
+//				noRTCBattery = false;
 		}
     }
 	

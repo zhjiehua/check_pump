@@ -852,9 +852,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="weiduodianzi_zh.ts">
-      <Filter>Translation Files</Filter>
-    </None>
     <None Include="ClassDiagram11.cd" />
     <None Include="ui\activeNavigator.png">
       <Filter>Resource Files</Filter>
@@ -975,6 +972,9 @@
     </None>
     <None Include="ui\user.png">
       <Filter>Resource Files</Filter>
+    </None>
+    <None Include="weiduodianzi_zh.ts">
+      <Filter>Translation Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

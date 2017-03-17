@@ -9,6 +9,7 @@
 class AdminPage: public CBasePage
 {
 	Q_OBJECT
+
 public:
 	AdminPage(QWidget *parent = 0, quint8 index = 0, quint8 previndex = 0, quint32 add = 0);
 	~AdminPage(void);
@@ -32,6 +33,9 @@ private slots:
 
 	void changePcPro(int idx);//更改协议;
 	void changeConnectPort(int idx);
+
+	void on_saveDataBtn_clicked();
+	void on_updateDataBtn_clicked();
 };
 
 #endif //ADMINPAGE_H

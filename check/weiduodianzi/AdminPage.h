@@ -32,6 +32,9 @@ private slots:
 	void tryDayChanged(QString val);
 
 	void on_rstBtn_clicked();//回复出厂设置
+
+	void on_saveDataBtn_clicked();
+	void on_updateDataBtn_clicked();
 };
 
 #endif //ADMINPAGE_H
