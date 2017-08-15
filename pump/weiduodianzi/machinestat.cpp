@@ -725,7 +725,7 @@ void MachineStat::setUploadPressFreq_Clarity( int freq )
 	{
 		if(m_pUploadTimer->isActive())
 			m_pUploadTimer->stop();
-		m_pUploadTimer->start(freq*50);//50*freq(ms)
+		m_pUploadTimer->start(freq*100);//50*freq(ms)
 	}
 }
 

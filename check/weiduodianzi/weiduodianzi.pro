@@ -5,7 +5,9 @@
 TEMPLATE = app
 TARGET = weiduodianzi
 DESTDIR = ../Win32/Debug
+greaterThan(QT_MAJOR_VERSION, 4): DESTDIR = ../x64/Debug
 QT += core gui network
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 CONFIG += debug
 DEFINES += QT_DLL
 INCLUDEPATH += ./GeneratedFiles \

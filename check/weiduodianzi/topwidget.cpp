@@ -1,5 +1,5 @@
 #include "topwidget.h"
-#include <QtGui/QApplication>
+//#include <QtGui/QApplication>
 
 TopWidget::TopWidget(QWidget *parent)
 	: QWidget(parent)

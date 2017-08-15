@@ -11,10 +11,18 @@
 	2016-11-17		V0.96		Clarity协议的时间跟上传频率无关		zhjiehua
 	2017-03-17		V0.97		将保存数据和更新数据按钮从信息页面移到管理员页面
 																	zhjiehua
+	2017-08-15		V0.98		将超级管理员的密码由111111改成173895    
+																	zhjiehua
 */
 
 #include "baseMainPage.h"
-#include <QtGui/QApplication>
+//#if QT_VERSION >= 0x050000
+//#include <QtWidgets/QApplication>
+//#else
+//#include <QtGui/QApplication>
+//#endif
+#include <QApplication>
+
 #include <QFont>
 #include <QTextCodec>
 #include "Common.h"
@@ -28,6 +36,9 @@ int g_nActScreenY;
 
 int main(int argc, char *argv[])
 {
+#if QT_VERSION >= 0x050000
+	QTextCodec::setCodecForLocale(QTextCodec::codecForName("UTF8"));
+#endif
 	QApplication a(argc, argv);
 
 	QDesktopWidget* desktopWidget = QApplication::desktop();
@@ -41,7 +52,7 @@ int main(int argc, char *argv[])
 	qDebug() << "m_nActScreenX = " << g_nActScreenX;
 	qDebug() << "m_nActScreenY = " << g_nActScreenY;
 
-	QTextCodec::setCodecForTr(QTextCodec::codecForName("gb18030"));
+	//QTextCodec::setCodecForTr(QTextCodec::codecForName("gb18030"));
 	QFont font;
 	if(g_nActScreenX < 420)
 		font.setPointSize(8);
@@ -54,8 +65,11 @@ int main(int argc, char *argv[])
 #endif
 	}
 
+#if QT_VERSION < 0x050000
 	QTextCodec::setCodecForTr(QTextCodec::codecForName("gb18030"));
 	QTextCodec::setCodecForCStrings(QTextCodec::codecForName("gb18030"));
+#endif
+
 	//QFont font;
 	//font.setPointSize(8);
 	//font.setFamily(("黑体"));

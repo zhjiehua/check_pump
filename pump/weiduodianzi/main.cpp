@@ -14,6 +14,9 @@
 																		zhjiehua
 	2017-03-17		V0.98		将保存数据和更新数据按钮从信息页面移到管理员页面
 																		zhjiehua
+	2017-08-15		V0.99		将超级管理员的密码由111111改成173895；
+								将Clarity协议的上传频率有50Hz步进改成10Hz步进					
+																		zhjiehua
 */
 
 #include "baseMainPage.h"

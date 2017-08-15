@@ -163,7 +163,7 @@ void DataBase::initDb()
 	sqlite3_exec( m_db , sql , 0 , 0 , &m_zErrMsg );
 
 	//”√ªß√‹¬Î;
-	sql = "INSERT INTO WDA VALUES('pwd' , '111111');";
+	sql = "INSERT INTO WDA VALUES('pwd' , '173895');";
 	sqlite3_exec( m_db , sql , 0 , 0 , &m_zErrMsg );
 	sql = "INSERT INTO WDA VALUES('usrpwd' , '222222');";
 	sqlite3_exec( m_db , sql , 0 , 0 , &m_zErrMsg );

@@ -45,5 +45,6 @@
         <file>ui/light_on.ico</file>
         <file>ui/light_on.png</file>
         <file>ui/light_err.png</file>
+        <file>weiduodianzi_zh.ts</file>
     </qresource>
 </RCC>

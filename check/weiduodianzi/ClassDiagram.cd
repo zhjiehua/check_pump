@@ -1,0 +1,1362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ui_AdminPage" Collapsed="true">
+    <Position X="17.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>z0gACIAQQIIGAJAACAAQkAQAAAQIICABAoAkEFLALTA=</HashCode>
+      <FileName>GeneratedFiles\ui_AdminPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_BaseMainPage" Collapsed="true">
+    <Position X="11.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAQQAIAAAAIEAAQAAAEA=</HashCode>
+      <FileName>GeneratedFiles\ui_BaseMainPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_BottomWidget" Collapsed="true">
+    <Position X="17.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAJABAAAAAJAACAAQAAABAASAIAAgAIAAAAQABAA=</HashCode>
+      <FileName>GeneratedFiles\ui_bottomwidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_CheckingPageClass" Collapsed="true">
+    <Position X="8.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhAIAAAOAAABAACAAQAAAAAAQAIAAAAIAAAEDAJAA=</HashCode>
+      <FileName>GeneratedFiles\ui_CheckingPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_DebugMcuProtoPageClass" Collapsed="true">
+    <Position X="17.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAABAACAAAABAJEgSAIAAAAIAAAEAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_DebugMcuProtoPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_FixPageClass" Collapsed="true">
+    <Position X="5.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAAAAIABAIAAABAAAAAQQAAAAAQAIAAAAoAAAADAPEE=</HashCode>
+      <FileName>GeneratedFiles\ui_fixPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_FlowFixPageClass" Collapsed="true">
+    <Position X="17.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAIAAAAAEBAAQAIAgAAIAAAEAABAA=</HashCode>
+      <FileName>GeneratedFiles\ui_FlowFixPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_GlpInfoPageClass" Collapsed="true">
+    <Position X="2.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wwAEAAAAAYQQBBgACIAAgAAAAASAIAAAEIAIAEBAPAI=</HashCode>
+      <FileName>GeneratedFiles\ui_glpinfopage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_GradientTableClass" Collapsed="true">
+    <Position X="14.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAEBAAQAIAAAAAAAAEAABAA=</HashCode>
+      <FileName>GeneratedFiles\ui_GradientTable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_KeyBoardDialog" Collapsed="true">
+    <Position X="11.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CABAAAABAAQAAAAgCgMAAAAIIUQAIABAAOAgAEEABFA=</HashCode>
+      <FileName>GeneratedFiles\ui_keyboardDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_LampHistoryPageClass" Collapsed="true">
+    <Position X="14.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAhAAAIAAAAAABAAQAIAAAAIAAAABAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_LampHistoryPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_LanguagePageClass" Collapsed="true">
+    <Position X="8.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIABAIAABAAgAAAUAAAAAAQAKAAAAIAQAEDANAA=</HashCode>
+      <FileName>GeneratedFiles\ui_LanguagePage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_LogoPageClass" Collapsed="true">
+    <Position X="14.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAQAIAAAAIAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_logpage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_MsgPageClass" Collapsed="true">
+    <Position X="5.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIADAIAGEAAACACQEAAAAAQIIAAAAIAAAFDIfAA=</HashCode>
+      <FileName>GeneratedFiles\ui_MsgPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_NetConfigPageClass" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>zwEIAOABAJAEAhAACEAQAAABAAQAICAAAIACAEDAJDA=</HashCode>
+      <FileName>GeneratedFiles\ui_netconfigpage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_PermitPageClass" Collapsed="true">
+    <Position X="2.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAgAIATAIAAABAADAAQAEAAAAQAIAAAAoAAAECADAA=</HashCode>
+      <FileName>GeneratedFiles\ui_PermitPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_PwdPage" Collapsed="true">
+    <Position X="11.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wQAAAIABAIAAAAAACAAQAAAAAAQAIAAIAIAEAEDAPAA=</HashCode>
+      <FileName>GeneratedFiles\ui_PwdPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_RunConstPageClass" Collapsed="true">
+    <Position X="8.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAQAAAAABAADAAAAAAAAAQAIACAAAAAQEAERAA=</HashCode>
+      <FileName>GeneratedFiles\ui_RunConstPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_RunPageClass" Collapsed="true">
+    <Position X="11.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>zwEAAIAAAIAAIBQAIAAYAAQAAAQAIAAAAIAAIBDAPFM=</HashCode>
+      <FileName>GeneratedFiles\ui_RunPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_RunParamPageClass" Collapsed="true">
+    <Position X="5.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>zwEAAIAAAIEAgBAAAAAYgAAAAAQAILEAAIAAAEDAPFM=</HashCode>
+      <FileName>GeneratedFiles\ui_RunParamPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_ScanPage" Collapsed="true">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>zQEAAoABAIECABQACAAQgAAAAAQAICAAAIIAAEDEPjM=</HashCode>
+      <FileName>GeneratedFiles\ui_ScanPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_SensitivePageClass" Collapsed="true">
+    <Position X="2.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>zABAQAAAAIAAAAAACAAAAAAAAAQAIAAAAAAAAECABCA=</HashCode>
+      <FileName>GeneratedFiles\ui_sensitivePage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_SetupPageClass" Collapsed="true">
+    <Position X="8.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>zwAgAIDzBJAAEBAAAAAUAAAACAQAIBAAAIAAAEDEABA=</HashCode>
+      <FileName>GeneratedFiles\ui_SetupPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_TimePageClass" Collapsed="true">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAAAAAIAAIAAAAAACIAAABghAAQAIAAAAIAAAEDAMTg=</HashCode>
+      <FileName>GeneratedFiles\ui_timePage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_TopWidget" Collapsed="true">
+    <Position X="2.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAQAIAAAAIAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_topwidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui_WaveFixPageClass" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAKAAAAAEBAAQAIAgAAIAAAAAABAA=</HashCode>
+      <FileName>GeneratedFiles\ui_waveFixPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseMainPage" Collapsed="true">
+    <Position X="56.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBoAFIAZUBAAEJAAAAoCAIBQBPCASAAAEEABigAAAAA=</HashCode>
+      <FileName>baseMainPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Worker" Collapsed="true">
+    <Position X="65" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0EQABjCQAGEgAAAJhAAEooAADAAAACAKEFFIgcJCBCA=</HashCode>
+      <FileName>Communication\LogicThread.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Posix_QextSerialPort" Collapsed="true">
+    <Position X="2.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAAAAMEECAEYgCABAKCEAGAAAAAAIAIAAKggQAAAAAA=</HashCode>
+      <FileName>Communication\posix_qextserialport.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QextSerialBase" Collapsed="true">
+    <Position X="3.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RDQgAMGEQAEQkCABAKCMACAAAAAIIAxAgIgAABAAKAA=</HashCode>
+      <FileName>Communication\qextserialbase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QextSerialPort" Collapsed="true">
+    <Position X="54.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAABAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Communication\qextserialport.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Win_QextSerialPort" Collapsed="true">
+    <Position X="4.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAAMEMAAERwSABAKCEMDCACAAAIgIAAIggAAgAAJA=</HashCode>
+      <FileName>Communication\win_qextserialport.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Win_QextSerialThread" Collapsed="true">
+    <Position X="63.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEgAAACAAAAAAAAAAAAAAAAAgAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Communication\win_qextserialport.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CBasePage" Collapsed="true">
+    <Position X="28.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAADAQQAAANBAAAAAIAAGAAIACIQQAAAAAEAIAAAg=</HashCode>
+      <FileName>BasePage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TopWidget" Collapsed="true">
+    <Position X="61.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>topwidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScanPage" Collapsed="true">
+    <Position X="40.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAIAEEAAAIAAAAAAAAAAAQQAAAAAAAIAEAA=</HashCode>
+      <FileName>ScanPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BottomWidget" Collapsed="true">
+    <Position X="58" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAIAIAFAEAAAAAAAEIAACAAAAAAABAAAABCgAAA=</HashCode>
+      <FileName>bottomwidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CheckingPage" Collapsed="true">
+    <Position X="49.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAQAAAAAEAAAAAAQAAAAAAAAAQQAAAAAAAAAAAA=</HashCode>
+      <FileName>CheckingPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NetConfigPage" Collapsed="true">
+    <Position X="4.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAEABAAAAEAQAAAAAAAQQAAAAAAAAAAAA=</HashCode>
+      <FileName>netconfigpage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GlpInfoPage" Collapsed="true">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAEAAAEAAACAAAAAAAAQQAAAAAAAIAAAA=</HashCode>
+      <FileName>glpinfopage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GradientTable" Collapsed="true">
+    <Position X="13.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAgAAAAQgQRAAAAAAAIAAAE=</HashCode>
+      <FileName>GradientTable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LampHistoryPage" Collapsed="true">
+    <Position X="18.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAQAAAAEAAAAAAAQAAAAAAAAQRAAAAAAAAAAAE=</HashCode>
+      <FileName>LampHistoryPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogoPage" Collapsed="true">
+    <Position X="22.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAABAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>logopage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WaveFixPage" Collapsed="true">
+    <Position X="27.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAACAAAEAAAAAAAAAAAAAAQgQQAAAAAAAAAAAE=</HashCode>
+      <FileName>WaveFixPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimePage" Collapsed="true">
+    <Position X="31.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAEAAAAASQAAAAAAAIAAAA=</HashCode>
+      <FileName>TimePage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlowFixPage" Collapsed="true">
+    <Position X="34" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEBAACAAAEAAAEAAAAAAAAAAQgQQAFAAAIAAAAAE=</HashCode>
+      <FileName>FlowFixPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DebugMcuProtoPage" Collapsed="true">
+    <Position X="36.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAQAAAAkAgEAAAAAABAAAAIAQQAAAEAARACAAE=</HashCode>
+      <FileName>DebugMcuProtoPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SensitivePage" Collapsed="true">
+    <Position X="38.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAQAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>SensitivePage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FixPage" Collapsed="true">
+    <Position X="43" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAECAAAAAEAAAAAAAAAQQAAAAAAAIAAAA=</HashCode>
+      <FileName>FixPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdminPage" Collapsed="true">
+    <Position X="45.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQKAAIAAAAAEAAAwAAEAIAAAAAAAQQAAAEAAAAAhAA=</HashCode>
+      <FileName>AdminPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PermitPage" Collapsed="true">
+    <Position X="47.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAACIAAAEAAAAAAAEAAAAAAAAQQIAAAAAAIAAAA=</HashCode>
+      <FileName>permitpage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MsgPage" Collapsed="true">
+    <Position X="52" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQYAAAAAAAAEAAAAAAAAAAAAAAAAQQAAAAAAAAAAAA=</HashCode>
+      <FileName>msgpage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LanguagePage" Collapsed="true">
+    <Position X="7" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAIAAEAAAAAAAAAAAAAAAAQQAAAIAAAIAAAA=</HashCode>
+      <FileName>language.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PwdPage" Collapsed="true">
+    <Position X="11.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAQQAAAAAAAIAAAA=</HashCode>
+      <FileName>pwdpage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RunParamPage" Collapsed="true">
+    <Position X="16" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAEAAAAIAAAAAAAAAACQQAAAAAAAAAAAA=</HashCode>
+      <FileName>runparam.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RunConstPage" Collapsed="true">
+    <Position X="20.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>runconst.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SetupPage" Collapsed="true">
+    <Position X="25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABQEAAAAAAAAAAAAEAAASYIgAAAAAAAAgA=</HashCode>
+      <FileName>setuppage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RunPage" Collapsed="true">
+    <Position X="29.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAgAAAAAAkAAgAAIAAAAAAgAQAQQAAAAAAAAAAAE=</HashCode>
+      <FileName>runpage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MsgBox" Collapsed="true">
+    <Position X="65" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>msgbox.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KeyBoardDialog" Collapsed="true">
+    <Position X="59.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAQAAYECAABQDABBAAACAAAiEAAAAAgAAKBAA=</HashCode>
+      <FileName>KeyboardDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EditCtrl" Collapsed="true">
+    <Position X="66.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAECIAAQABCEIgBABMAAYAAACAARkQAAAAA=</HashCode>
+      <FileName>editctrl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComboCtrl" Collapsed="true">
+    <Position X="61.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAIAACAAAAAAAIAAAAAAIAAAA=</HashCode>
+      <FileName>comboctrl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BtnCtrl" Collapsed="true">
+    <Position X="59.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>btnctrl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ImgButton" Collapsed="true">
+    <Position X="56.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAABAAAAAABAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>imgbutton.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TableEditor" Collapsed="true">
+    <Position X="58" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACACAIgAAAAAAAAAAAABQAAAAAAA=</HashCode>
+      <FileName>tableeditor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTableModel" Collapsed="true">
+    <Position X="66.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAQAgABAIAAAQIAAACIBEBQEAIAAM4AAAAAAQ=</HashCode>
+      <FileName>mytablemodel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TableCtrl" Collapsed="true">
+    <Position X="56.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAIAAAAAAIAAAAAAQAAAAAACAAAAAAAA=</HashCode>
+      <FileName>tablectrl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EditorDelegate" Collapsed="true">
+    <Position X="54.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAACAIAAAAAAAAAEAAAAAAAAAQABAA=</HashCode>
+      <FileName>editordelegate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TimeHelper" Collapsed="true">
+    <Position X="59.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEACAAAAAAAAAAAAEAAQAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>timehelper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IoModule" Collapsed="true">
+    <Position X="58" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACQAICQAAAAAAABIABAAABAABAAAQAAMCRA4AAAAk=</HashCode>
+      <FileName>iomodule.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LineUint" Collapsed="true">
+    <Position X="61.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAgAAABAAAwAgACCAgUCAAAoAIEA=</HashCode>
+      <FileName>lineuint.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CommunicationCoupling" Collapsed="true">
+    <Position X="63.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCAAEEAAAAAgAAAsAAEAQiAAKEAA4hAIAAAFQAgIAAg=</HashCode>
+      <FileName>communicationcoupling.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBase" Collapsed="true">
+    <Position X="65" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SCABCQAAAADsAAgADBAIAKgEAQiAADQgAAFAGEgAAAA=</HashCode>
+      <FileName>database.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AuAdjust" Collapsed="true">
+    <Position X="54.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gGAAAAAAAAAAAADAAAQIAYACAAAAgAQAAIAAAQEAIAY=</HashCode>
+      <FileName>auadjust.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MachineStat" Collapsed="true">
+    <Position X="63.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DVtOc8k0XwRAWQAn4pgCXMGM7AyaF4RW4DcJ8UvkOdE=</HashCode>
+      <FileName>machinestat.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::AdminPage" Collapsed="true">
+    <Position X="17.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_AdminPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::BaseMainPage" Collapsed="true">
+    <Position X="11.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_BaseMainPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::BottomWidget" Collapsed="true">
+    <Position X="17.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_bottomwidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::CheckingPageClass" Collapsed="true">
+    <Position X="8.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_CheckingPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::DebugMcuProtoPageClass" Collapsed="true">
+    <Position X="17.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_DebugMcuProtoPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::FixPageClass" Collapsed="true">
+    <Position X="5.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_fixPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::FlowFixPageClass" Collapsed="true">
+    <Position X="17.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_FlowFixPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::GlpInfoPageClass" Collapsed="true">
+    <Position X="2.5" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_glpinfopage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::GradientTableClass" Collapsed="true">
+    <Position X="14.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_GradientTable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::KeyBoardDialog" Collapsed="true">
+    <Position X="11.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_keyboardDialog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::LampHistoryPageClass" Collapsed="true">
+    <Position X="14.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_LampHistoryPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::LanguagePageClass" Collapsed="true">
+    <Position X="8.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_LanguagePage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::LogoPageClass" Collapsed="true">
+    <Position X="14.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_logpage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::MsgPageClass" Collapsed="true">
+    <Position X="5.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_MsgPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::NetConfigPageClass" Collapsed="true">
+    <Position X="14.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_netconfigpage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::PermitPageClass" Collapsed="true">
+    <Position X="2.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_PermitPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::PwdPage" Collapsed="true">
+    <Position X="11.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_PwdPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::RunConstPageClass" Collapsed="true">
+    <Position X="8.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_RunConstPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::RunPageClass" Collapsed="true">
+    <Position X="11.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_RunPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::RunParamPageClass" Collapsed="true">
+    <Position X="5.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_RunParamPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::ScanPage" Collapsed="true">
+    <Position X="11.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_ScanPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::SensitivePageClass" Collapsed="true">
+    <Position X="2.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_sensitivePage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::SetupPageClass" Collapsed="true">
+    <Position X="8.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_SetupPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::TimePageClass" Collapsed="true">
+    <Position X="5.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_timePage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::TopWidget" Collapsed="true">
+    <Position X="2.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_topwidget.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::WaveFixPageClass" Collapsed="true">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_waveFixPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="`anonymous-namespace'::initializer" Collapsed="true">
+    <Position X="54.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAEA=</HashCode>
+      <FileName>GeneratedFiles\qrc_weiduodianzi.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_AdminPage_t" Collapsed="true">
+    <Position X="58" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_AdminPage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_AuAdjust_t" Collapsed="true">
+    <Position X="59.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_auadjust.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_BaseMainPage_t" Collapsed="true">
+    <Position X="61.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_baseMainPage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_CBasePage_t" Collapsed="true">
+    <Position X="66.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_BasePage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_BottomWidget_t" Collapsed="true">
+    <Position X="63.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_bottomwidget.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_BtnCtrl_t" Collapsed="true">
+    <Position X="65" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_btnctrl.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_CheckingPage_t" Collapsed="true">
+    <Position X="54.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_CheckingPage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_ComboCtrl_t" Collapsed="true">
+    <Position X="56.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_comboctrl.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_CommunicationCoupling_t" Collapsed="true">
+    <Position X="58" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_communicationcoupling.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_DataBase_t" Collapsed="true">
+    <Position X="59.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_database.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_DebugMcuProtoPage_t" Collapsed="true">
+    <Position X="61.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_DebugMcuProtoPage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_EditCtrl_t" Collapsed="true">
+    <Position X="63.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_editctrl.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_EditorDelegate_t" Collapsed="true">
+    <Position X="65" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_editordelegate.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_FixPage_t" Collapsed="true">
+    <Position X="66.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_FixPage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_FlowFixPage_t" Collapsed="true">
+    <Position X="54.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_FlowFixPage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_GlpInfoPage_t" Collapsed="true">
+    <Position X="56.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_glpinfopage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_GradientTable_t" Collapsed="true">
+    <Position X="58" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_GradientTable.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_ImgButton_t" Collapsed="true">
+    <Position X="59.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_imgbutton.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_IoModule_t" Collapsed="true">
+    <Position X="61.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_iomodule.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_KeyBoardDialog_t" Collapsed="true">
+    <Position X="63.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_KeyboardDialog.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_LampHistoryPage_t" Collapsed="true">
+    <Position X="65" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_LampHistoryPage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_LanguagePage_t" Collapsed="true">
+    <Position X="66.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_language.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_LineUint_t" Collapsed="true">
+    <Position X="54.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_lineuint.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_Worker_t" Collapsed="true">
+    <Position X="54.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_LogicThread.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_LogoPage_t" Collapsed="true">
+    <Position X="56.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_logopage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_MachineStat_t" Collapsed="true">
+    <Position X="58" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_machinestat.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_MsgBox_t" Collapsed="true">
+    <Position X="59.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_msgbox.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_MsgPage_t" Collapsed="true">
+    <Position X="61.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_msgpage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_MyTableModel_t" Collapsed="true">
+    <Position X="63.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_mytablemodel.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_NetConfigPage_t" Collapsed="true">
+    <Position X="65" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_netconfigpage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_PermitPage_t" Collapsed="true">
+    <Position X="66.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_permitpage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_PwdPage_t" Collapsed="true">
+    <Position X="54.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_pwdpage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_QextSerialBase_t" Collapsed="true">
+    <Position X="56.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_qextserialbase.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_QextSerialPort_t" Collapsed="true">
+    <Position X="58" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_qextserialport.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_RunConstPage_t" Collapsed="true">
+    <Position X="59.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_runconst.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_RunPage_t" Collapsed="true">
+    <Position X="61.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_runpage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_RunParamPage_t" Collapsed="true">
+    <Position X="63.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_runparam.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_ScanPage_t" Collapsed="true">
+    <Position X="65" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_ScanPage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_SensitivePage_t" Collapsed="true">
+    <Position X="66.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_SensitivePage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_SetupPage_t" Collapsed="true">
+    <Position X="54.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_setuppage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_TableCtrl_t" Collapsed="true">
+    <Position X="56.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_tablectrl.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_TableEditor_t" Collapsed="true">
+    <Position X="58" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_tableeditor.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_TimeHelper_t" Collapsed="true">
+    <Position X="59.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_timehelper.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_TimePage_t" Collapsed="true">
+    <Position X="61.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_TimePage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_TopWidget_t" Collapsed="true">
+    <Position X="63.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_topwidget.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_WaveFixPage_t" Collapsed="true">
+    <Position X="65" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_WaveFixPage.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="qt_meta_stringdata_Win_QextSerialPort_t" Collapsed="true">
+    <Position X="66.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_win_qextserialport.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SendMcuData" Collapsed="true">
+    <Position X="56.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAgAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\LogicThread.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="tagProtocolConf" Collapsed="true">
+    <Position X="7.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAEAAAAAAAIAAAAAAAAAAQAEAABAAAA=</HashCode>
+      <FileName>Communication\Protocol.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="tagProtocol4McuConf" Collapsed="true">
+    <Position X="21.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAEAAAAAAAIAAAAAAAAAAQAEAAAAAAE=</HashCode>
+      <FileName>Communication\Protocol.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PortSettings" Collapsed="true">
+    <Position X="56.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAhAAAAAAAAAAAAEAAAUAAA=</HashCode>
+      <FileName>Communication\qextserialbase.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="tagProtocolData" Collapsed="true">
+    <Position X="3.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAACAAAABAAAAAAAASBAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Communication\Protocol.c</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="tagStructPageMethod" Collapsed="true">
+    <Position X="15.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>BasePage.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_auNode" Collapsed="true">
+    <Position X="19.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAQAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>auadjust.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="_doubleAu" Collapsed="true">
+    <Position X="21.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>auadjust.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="uint16" Collapsed="true">
+    <Position X="63.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Device.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int16" Collapsed="true">
+    <Position X="59.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Device.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="uint32" Collapsed="true">
+    <Position X="65" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Device.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="int32" Collapsed="true">
+    <Position X="61.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Device.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="api_res" Collapsed="true">
+    <Position X="54.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Device.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="mbyte" Collapsed="true">
+    <Position X="63.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Device.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="pComWrite" Collapsed="true">
+    <Position X="66.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Protocol.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="pTimerOut" Collapsed="true">
+    <Position X="61.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Protocol.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="pSetTimer" Collapsed="true">
+    <Position X="58" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Protocol.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="pProcess" Collapsed="true">
+    <Position X="54.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Protocol.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="pProcess4Clarity" Collapsed="true">
+    <Position X="56.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Protocol.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="pCheckCompare" Collapsed="true">
+    <Position X="65" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Protocol.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ProtocolConf" Collapsed="true">
+    <Position X="10.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Protocol.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="LPProtocolConf" Collapsed="true">
+    <Position X="7.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Protocol.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Protocol4McuConf" Collapsed="true">
+    <Position X="24.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Protocol.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="LPProtocol4McuConf" Collapsed="true">
+    <Position X="21.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Protocol.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ProtocolData" Collapsed="true">
+    <Position X="0.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Protocol.c</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="LPProtocolData" Collapsed="true">
+    <Position X="3.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\Protocol.c</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="getPageInstance" Collapsed="true">
+    <Position X="58" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasePage.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="StructPageMethod" Collapsed="true">
+    <Position X="18.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasePage.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="LPStructPageMethod" Collapsed="true">
+    <Position X="15.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BasePage.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="btnSlots" Collapsed="true">
+    <Position X="56.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>bottomwidget.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="AuNode" Collapsed="true">
+    <Position X="19.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>auadjust.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="DoubleAu" Collapsed="true">
+    <Position X="21.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>auadjust.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="pTimeoutFunc" Collapsed="true">
+    <Position X="59.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>machinestat.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="e_insMap" Collapsed="true">
+    <Position X="63.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAARAQMABSFYhAAAAFwGQAMBAIAAACAACgAAQAAgAA=</HashCode>
+      <FileName>Communication\plc_instruction.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="e_sinsMap" Collapsed="true">
+    <Position X="65" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>NVSMWUBJED0CRAACAkAAARCAAAAAgAAAAYIBAAQRAhA=</HashCode>
+      <FileName>Communication\plc_instruction.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="e_elementMap" Collapsed="true">
+    <Position X="61.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\plc_instruction.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="e_dinsMap" Collapsed="true">
+    <Position X="59.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAEIAAgAQKKSqhAAIHBAYAgiAEIRABAAAhgCRuAChAo=</HashCode>
+      <FileName>Communication\plc_instruction.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="e_delementMap" Collapsed="true">
+    <Position X="58" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAgIAAA=</HashCode>
+      <FileName>Communication\plc_instruction.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NamingConvention" Collapsed="true">
+    <Position X="56.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAhAAAAAAAAAAAggAAAAAAIACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\qextserialbase.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BaudRateType" Collapsed="true">
+    <Position X="54.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEIAAAQABRAUABAAARABAgEgCKBAAAAAA=</HashCode>
+      <FileName>Communication\qextserialbase.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DataBitsType" Collapsed="true">
+    <Position X="56.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\qextserialbase.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ParityType" Collapsed="true">
+    <Position X="58" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAgAAAAAIAIAAQAAAAAA=</HashCode>
+      <FileName>Communication\qextserialbase.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="StopBitsType" Collapsed="true">
+    <Position X="59.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\qextserialbase.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="FlowType" Collapsed="true">
+    <Position X="54.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAEABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Communication\qextserialbase.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="eProtocolType" Collapsed="true">
+    <Position X="66.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAgAAAAAAIAA=</HashCode>
+      <FileName>Communication\Protocol.c</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

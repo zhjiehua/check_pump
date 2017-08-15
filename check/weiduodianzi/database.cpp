@@ -67,7 +67,12 @@ QString DataBase::queryData(QString name)
 void DataBase::insertBaseData(QString var, QString val)
 {
 	QString sql = QString("INSERT INTO WDA VALUES('%1' , '%2');").arg(var).arg(val);
+#if QT_VERSION >= 0x050000
+	sqlite3_exec(m_db, sql.toLatin1().data(), 0, 0, &m_zErrMsg);
+#else
 	sqlite3_exec( m_db , sql.toAscii().data() , 0 , 0 , &m_zErrMsg );
+#endif
+	
 }
 
 
@@ -151,7 +156,7 @@ void DataBase::restoreWDADataBase(bool restore /*= false*/)
 	dataBase["activeCode"]="0000000000";
 
 	//”√ªß√‹¬Î;
-	dbData["pwd"] = "111111";
+	dbData["pwd"] = "173895";
 	dbData["usrpwd"] = "222222";
 	dbData["lamppwd"] = "333333";
 

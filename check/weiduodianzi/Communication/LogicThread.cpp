@@ -756,7 +756,11 @@ void Worker::uploadAuToPc(quint8 chanel, quint32 au , quint32 au2)
 		data.append(0x53);
 		data.append(0x4d);
 		data.append(0x20);
+#if QT_VERSION >= 0x050000
+		data.append(QString("%1").arg(au, 6, 16, QLatin1Char('0')).toUpper().toLatin1());
+#else
 		data.append(QString("%1").arg(au,6,16,QLatin1Char('0')).toUpper().toAscii());
+#endif
 		data.append(0x0d);
 		data.append(0x7f);
 	}
@@ -765,13 +769,21 @@ void Worker::uploadAuToPc(quint8 chanel, quint32 au , quint32 au2)
 		data.append(0x53);
 		data.append(0x4d);
 		data.append(0x20);
-		data.append(QString("%1").arg(au,6,16,QLatin1Char('0')).toUpper().toAscii());
+#if QT_VERSION >= 0x050000
+		data.append(QString("%1").arg(au, 6, 16, QLatin1Char('0')).toUpper().toLatin1());
+#else
+		data.append(QString("%1").arg(au, 6, 16, QLatin1Char('0')).toUpper().toAscii());
+#endif
 		data.append(0x0d);
 
 		data.append(0x53);
 		data.append(0x6d);
 		data.append(0x20);
-		data.append(QString("%1").arg(au2,6,16,QLatin1Char('0')).toUpper().toAscii());
+#if QT_VERSION >= 0x050000
+		data.append(QString("%1").arg(au, 6, 16, QLatin1Char('0')).toUpper().toLatin1());
+#else
+		data.append(QString("%1").arg(au, 6, 16, QLatin1Char('0')).toUpper().toAscii());
+#endif
 		data.append(0x0d);
 		data.append(0x7f);
 	}

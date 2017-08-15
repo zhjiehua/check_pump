@@ -1,31 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="zh_CN">
+<TS version="2.1" language="zh_CN">
 <context>
     <name>AdminPage</name>
-    <message id="0">
+    <message>
         <location filename="AdminPage.cpp" line="27"/>
-        <location filename="CheckingPage.cpp" line="12"/>
-        <location filename="FixPage.cpp" line="9"/>
-        <location filename="glpinfopage.cpp" line="12"/>
-        <location filename="LampHistoryPage.cpp" line="15"/>
-        <location filename="GradientTable.cpp" line="11"/>
-        <location filename="language.cpp" line="9"/>
-        <location filename="logopage.cpp" line="7"/>
-        <location filename="msgpage.cpp" line="23"/>
-        <location filename="netconfigpage.cpp" line="9"/>
-        <location filename="permitpage.cpp" line="10"/>
-        <location filename="runconst.cpp" line="5"/>
-        <location filename="runpage.cpp" line="9"/>
-        <location filename="runparam.cpp" line="9"/>
-        <location filename="pwdpage.cpp" line="11"/>
-        <location filename="ScanPage.cpp" line="12"/>
-        <location filename="SensitivePage.cpp" line="5"/>
-        <location filename="DebugMcuProtoPage.cpp" line="8"/>
-        <location filename="FlowFixPage.cpp" line="13"/>
-        <location filename="setuppage.cpp" line="7"/>
-        <location filename="TimePage.cpp" line="18"/>
-        <location filename="WaveFixPage.cpp" line="11"/>
         <source>AdminPage</source>
         <oldsource>FixPage</oldsource>
         <translation>权限页面</translation>
@@ -386,6 +365,7 @@
 <context>
     <name>CheckingPage</name>
     <message>
+        <location filename="CheckingPage.cpp" line="12"/>
         <location filename="CheckingPage.cpp" line="15"/>
         <source>Checking</source>
         <oldsource>CheckingPage</oldsource>
@@ -427,28 +407,33 @@
 <context>
     <name>DataBase</name>
     <message>
-        <location filename="database.cpp" line="491"/>
+        <location filename="database.cpp" line="492"/>
         <source>ID</source>
         <translation>ID</translation>
     </message>
     <message>
-        <location filename="database.cpp" line="491"/>
+        <location filename="database.cpp" line="492"/>
         <source>Lamp</source>
         <translation>灯源</translation>
     </message>
     <message>
-        <location filename="database.cpp" line="491"/>
+        <location filename="database.cpp" line="492"/>
         <source>Used Time</source>
         <translation>使用时间</translation>
     </message>
     <message>
-        <location filename="database.cpp" line="491"/>
+        <location filename="database.cpp" line="492"/>
         <source>Change Date</source>
         <translation>更换日期</translation>
     </message>
 </context>
 <context>
     <name>DebugMcuProtoPage</name>
+    <message>
+        <location filename="DebugMcuProtoPage.cpp" line="8"/>
+        <source>DebugMcuProtoPage</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <location filename="DebugMcuProtoPage.cpp" line="14"/>
         <source>DebugPressPage</source>
@@ -500,6 +485,7 @@
         <translation type="obsolete">校正</translation>
     </message>
     <message>
+        <location filename="FixPage.cpp" line="9"/>
         <location filename="FixPage.cpp" line="12"/>
         <source>Calibration</source>
         <translation>校正</translation>
@@ -591,6 +577,7 @@
         <translation type="obsolete">波长校正</translation>
     </message>
     <message>
+        <location filename="FlowFixPage.cpp" line="13"/>
         <location filename="FlowFixPage.cpp" line="18"/>
         <source>Wave Calibration</source>
         <translation>波长校正</translation>
@@ -646,6 +633,7 @@
 <context>
     <name>GlpInfoPage</name>
     <message>
+        <location filename="glpinfopage.cpp" line="12"/>
         <location filename="glpinfopage.cpp" line="15"/>
         <source>GLP Information</source>
         <translation>GLP信息</translation>
@@ -763,6 +751,7 @@
 <context>
     <name>GradientTable</name>
     <message>
+        <location filename="GradientTable.cpp" line="11"/>
         <location filename="GradientTable.cpp" line="14"/>
         <source>GradientTable</source>
         <translation></translation>
@@ -882,6 +871,7 @@
 <context>
     <name>LampHistoryPage</name>
     <message>
+        <location filename="LampHistoryPage.cpp" line="15"/>
         <location filename="LampHistoryPage.cpp" line="18"/>
         <source>Lamp History</source>
         <oldsource>LampHistoryPage</oldsource>
@@ -959,6 +949,7 @@
 <context>
     <name>LanguagePage</name>
     <message>
+        <location filename="language.cpp" line="9"/>
         <location filename="language.cpp" line="12"/>
         <source>Language</source>
         <translation>语言</translation>
@@ -1009,6 +1000,14 @@
     </message>
 </context>
 <context>
+    <name>LogoPage</name>
+    <message>
+        <location filename="logopage.cpp" line="7"/>
+        <source>UV3000U</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>LogoPageClass</name>
     <message>
         <location filename="logpage.ui" line="14"/>
@@ -1042,6 +1041,7 @@
         <translation type="obsolete">信息</translation>
     </message>
     <message>
+        <location filename="msgpage.cpp" line="23"/>
         <location filename="msgpage.cpp" line="26"/>
         <source>About</source>
         <translation>关于</translation>
@@ -1154,6 +1154,7 @@
 <context>
     <name>NetConfigPage</name>
     <message>
+        <location filename="netconfigpage.cpp" line="9"/>
         <location filename="netconfigpage.cpp" line="12"/>
         <source>Network Configuration</source>
         <oldsource>NetConfig</oldsource>
@@ -1225,6 +1226,7 @@
 <context>
     <name>PermitPage</name>
     <message>
+        <location filename="permitpage.cpp" line="10"/>
         <location filename="permitpage.cpp" line="13"/>
         <source>Permission</source>
         <oldsource>Permit</oldsource>
@@ -1376,6 +1378,7 @@
         <translation>登录</translation>
     </message>
     <message>
+        <location filename="pwdpage.cpp" line="11"/>
         <location filename="pwdpage.cpp" line="14"/>
         <source>Password</source>
         <oldsource>PassWord</oldsource>
@@ -1399,6 +1402,7 @@
         <translation type="obsolete">运行常量</translation>
     </message>
     <message>
+        <location filename="runconst.cpp" line="5"/>
         <location filename="runconst.cpp" line="8"/>
         <source>Debug IO</source>
         <translation></translation>
@@ -1411,37 +1415,37 @@
         <source>Form</source>
         <translation></translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="RunConstPage.ui" line="37"/>
         <source>灯初始化</source>
         <translation></translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="RunConstPage.ui" line="44"/>
         <source>开/关</source>
         <translation></translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="RunConstPage.ui" line="61"/>
         <source>频率：</source>
         <translation></translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="RunConstPage.ui" line="88"/>
         <source>电机初始化</source>
         <translation></translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="RunConstPage.ui" line="95"/>
         <source>正</source>
         <translation></translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="RunConstPage.ui" line="102"/>
         <source>频率</source>
         <translation></translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="RunConstPage.ui" line="109"/>
         <source>电磁阀开</source>
         <translation></translation>
@@ -1470,6 +1474,7 @@
 <context>
     <name>RunPage</name>
     <message>
+        <location filename="runpage.cpp" line="9"/>
         <location filename="runpage.cpp" line="12"/>
         <source>Run</source>
         <oldsource>RunPage</oldsource>
@@ -1648,6 +1653,7 @@
 <context>
     <name>RunParamPage</name>
     <message>
+        <location filename="runparam.cpp" line="9"/>
         <location filename="runparam.cpp" line="12"/>
         <source>Parameters</source>
         <oldsource>Run Parameters</oldsource>
@@ -2072,6 +2078,7 @@
     </message>
     <message>
         <location filename="ScanPage.ui" line="236"/>
+        <location filename="ScanPage.cpp" line="12"/>
         <location filename="ScanPage.cpp" line="16"/>
         <location filename="ScanPage.cpp" line="49"/>
         <location filename="ScanPage.cpp" line="107"/>
@@ -2115,6 +2122,7 @@
 <context>
     <name>SensitivePage</name>
     <message>
+        <location filename="SensitivePage.cpp" line="5"/>
         <location filename="SensitivePage.cpp" line="8"/>
         <source>Sensitive</source>
         <translation>灵敏度</translation>
@@ -2231,6 +2239,7 @@
 <context>
     <name>SetupPage</name>
     <message>
+        <location filename="setuppage.cpp" line="7"/>
         <location filename="setuppage.cpp" line="10"/>
         <source>Setup</source>
         <translation>设置</translation>
@@ -2295,6 +2304,7 @@
 <context>
     <name>TimePage</name>
     <message>
+        <location filename="TimePage.cpp" line="18"/>
         <location filename="TimePage.cpp" line="22"/>
         <source>Time</source>
         <translation>时间</translation>
@@ -2399,6 +2409,7 @@
 <context>
     <name>WaveFixPage</name>
     <message>
+        <location filename="WaveFixPage.cpp" line="11"/>
         <location filename="WaveFixPage.cpp" line="14"/>
         <source>PressFix</source>
         <translation></translation>
