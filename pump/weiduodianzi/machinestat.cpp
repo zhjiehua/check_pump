@@ -869,7 +869,7 @@ void MachineStat::updateStartupTime()
 	if(m_machineStat.machineStat >= RUNNING)
 	{
 		//屏蔽上位机时间同步;
-		/**/if(!m_bPcGradientCtrl)
+		/**/if(!m_bPcGradientCtrl && m_machineStat.machineStat != PCCTRL)
 			setStartupTime(++m_machineStat.startupTime);
 		//setStartupTime(++m_machineStat.startupTime);
 		m_machineStat.pumpStartupTime++;
@@ -1268,6 +1268,9 @@ void MachineStat::pumpTypeChanged(bool flag)
 	int index = DataBase::getInstance()->queryData("pumptype").toInt();
 	m_pCommunicationCoupling->setPumpTypeForPcFlowCtrl(index);
 	m_machineStat.m_nPumpType = index;
+
+	//更新协议层泵类型
+	m_pCommunicationCoupling->sendCmd(PROTOCL_LOCAL_USE_CHANGE_PUMPTYPE, index, 0);
 
 	//更新当前的设备码;
 	updateMachineCode();

@@ -43,10 +43,10 @@ void RunParamPage::initFocusList()
 
 void RunParamPage::setMinAndMaxPress()
 {
-	int array[7]={42, 25 , 20, 20, 15, 10, 10};
+	int maxPressArray[11]={42, 25 , 20, 20, 20, 15, 15, 10, 10, 10, 10};
 	//int pumpType = ui.pumpMod->currentIndex();
 	int pumpType = DataBase::getInstance()->queryData("pumptype").toInt(); 
-	if(pumpType > 6)
+	if(pumpType > 10)
 		return;
 
 	//设置最大压力输入范围与现实内容;
@@ -59,16 +59,16 @@ void RunParamPage::setMinAndMaxPress()
 	}
 	else
 	{
-		temp = QString::number(array[pumpType]);
-		ui.maxPress->setValRange("maxpress", 0, array[pumpType], 2);
+		temp = QString::number(maxPressArray[pumpType]);
+		ui.maxPress->setValRange("maxpress", 0, maxPressArray[pumpType], 2);
 	}
 	ui.maxPress->setText(temp);
 	DataBase::getInstance()->updateDate("maxpress", temp);
 
 	//设置最小压力输入范围;
-	ui.minPress->setValRange("minpress", -50, array[pumpType], 2);
+	ui.minPress->setValRange("minpress", -50, maxPressArray[pumpType], 2);
 	int minPress = DataBase::getInstance()->queryData("minpress").toInt();
-	if(minPress > array[pumpType])
+	if(minPress > maxPressArray[pumpType])
 		minPress = 0;
 	temp = QString::number(minPress);
 	ui.minPress->setText(temp);
@@ -84,10 +84,11 @@ void RunParamPage::goToGradientPage()
 
 void RunParamPage::initDisplay()
 {
-	int array[7]={42, 25 , 20, 20, 15, 10, 10};
+	//int array[7]={42, 25 , 20, 20, 15, 10, 10};
+	int maxPressArray[11]={42, 25 , 20, 20, 20, 15, 15, 10, 10, 10, 10};
 	//int pumpType = ui.pumpMod->currentIndex();
 	int pumpType = DataBase::getInstance()->queryData("pumptype").toInt(); 
-	if(pumpType > 6)
+	if(pumpType > 10)
 		return;
 	
 	QString temp;
@@ -103,10 +104,10 @@ void RunParamPage::initDisplay()
 	else
 	{
 		//temp = QString::number(array[pumpType]);
-		ui.maxPress->setValRange("maxpress", 0, array[pumpType], 2);
+		ui.maxPress->setValRange("maxpress", 0, maxPressArray[pumpType], 2);
 	}
 	//ui.maxPress->setValRange("maxpress", 0, array[pumpType], 2);
-	ui.minPress->setValRange("minpress", -50, array[pumpType], 2);
+	ui.minPress->setValRange("minpress", -50, maxPressArray[pumpType], 2);
 	setStyleSheet( BTNGLOBALSTYLE);
 
 	if(MachineStat::getInstance()->m_bPumpTypeChange)

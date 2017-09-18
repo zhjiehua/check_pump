@@ -27,7 +27,8 @@ typedef struct tagProtocolData{
     quint8 senBuf[ MAX_PROTOCL_BUF_SZ ];
 	enum eProtocolType eType;
 	mbyte bESCGet;
-	int nPumpType;//0:10ml 1:50ml 2:100ml 3:250ml 4:500ml 5:1000ml 6:3000ml
+	int nPumpType;//0:10ml 1:50ml 2:100ml 3:150ml 4:250ml 5:300ml 6:500ml 7:800ml 8:1000ml 9:2000ml 10:3000ml
+	//0:10ml 1:50ml 2:100ml 3:250ml 4:500ml 5:1000ml 6:3000ml
 	
 }ProtocolData,*LPProtocolData;
 
@@ -266,12 +267,12 @@ static void ProcessData(int flowcmd)
 		type = PROTOCL_CMD;
 		if(flowcmd)
 		{
-			//0-6看g_protocol.nPumpType的定义;
+			//0-10看g_protocol.nPumpType的定义;
 			switch(g_protocol.nPumpType)
 			{
 			case 0:
 			case 1:
-			case 6:
+			case 10:
 				{
 					cmd = g_protocol.revBuf[ 0 ] & 0x0f;
 					add = g_protocol.revBuf[ 1 ] & 0x7f;
@@ -286,6 +287,10 @@ static void ProcessData(int flowcmd)
 			case 3:
 			case 4:
 			case 5:
+			case 6:
+			case 7:
+			case 8:
+			case 9:
 				{
 					cmd = g_protocol.revBuf[ 0 ] & 0x0f;
 					add = g_protocol.revBuf[ 1 ] & 0x7f;
@@ -317,19 +322,19 @@ static void ProcessData(int flowcmd)
 	}
 
 	//张杰华调试添加@2016-06-26
-	if(cmd == 0x08)
-	{
-		static uint32 last_arg = 0;
-		if(last_arg != arg)
-		{
-			quint8 i = 0;
-			last_arg = arg;
-			printf("\n==========\n");
-			for(i=0;i<5;i++)
-				printf("g_protocol.revBuf[%d] = %#X\n", i, g_protocol.revBuf[i]);
-			printf("arg = %d\n=========\n", arg);
-		}
-	}
+	//if(cmd == 0x08)
+	//{
+	//	static uint32 last_arg = 0;
+	//	if(last_arg != arg)
+	//	{
+	//		quint8 i = 0;
+	//		last_arg = arg;
+	//		printf("\n==========\n");
+	//		for(i=0;i<5;i++)
+	//			printf("g_protocol.revBuf[%d] = %#X\n", i, g_protocol.revBuf[i]);
+	//		printf("arg = %d\n=========\n", arg);
+	//	}
+	//}
 
 	if( type && g_protocol.conf.process )
 		g_protocol.conf.process( type, cmd, arg , add);
@@ -482,7 +487,7 @@ int API_Protocol( mbyte* pData, uint16 sz )
 				{
 				case 0:
 				case 1:
-				case 6:
+				case 10:
 					{
 						addLen = 1;
 					}
@@ -491,6 +496,10 @@ int API_Protocol( mbyte* pData, uint16 sz )
 				case 3:
 				case 4:
 				case 5:
+				case 6:
+				case 7:
+				case 8:
+				case 9:
 					{
 						addLen = 0;
 					}

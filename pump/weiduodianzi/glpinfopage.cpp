@@ -111,13 +111,13 @@ void GlpInfoPage::pumpChange(int pumpType)
 
 	//更新最大最小压力
 	//int array[7]={42, 25 , 20, 20, 15, 10, 10};
-	int array[11]={42, 25 , 20, 20, 20, 15, 15, 10, 10, 10, 10};
-	QString temp = QString::number(array[pumpType]);
+	int maxPressArray[11]={42, 25 , 20, 20, 20, 15, 15, 10, 10, 10, 10};
+	QString temp = QString::number(maxPressArray[pumpType]);
 	DataBase::getInstance()->updateDate("maxpress", temp);
 
 	//更新最小压力
 	int minPress = DataBase::getInstance()->queryData("minpress").toInt();
-	if(minPress > array[pumpType])
+	if(minPress > maxPressArray[pumpType])
 		minPress = 0;
 	temp = QString::number(minPress);
 	DataBase::getInstance()->updateDate("minpress", QString(temp));

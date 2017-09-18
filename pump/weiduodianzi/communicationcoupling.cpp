@@ -131,6 +131,10 @@ void CommunicationCoupling::processCmd4Pc(quint8 type, quint32 cmd, quint32 arg,
 			case 4:
 			case 5:
 			case 6:
+			case 7:
+			case 8:
+			case 9:
+			case 10:
 				val = (double)arg/10.0;
 				break;
 			default:
@@ -147,6 +151,8 @@ void CommunicationCoupling::processCmd4Pc(quint8 type, quint32 cmd, quint32 arg,
 			{
 				m_pMachine->syncFlowFromPc();
 			}
+
+			//qDebug() << "CommunicationCoupling::processCmd4Pc()" << strDisp;
 		}
 		break;
 	case PFC_SET_MAXPRESS:
@@ -209,6 +215,7 @@ void CommunicationCoupling::processCmd4Pc(quint8 type, quint32 cmd, quint32 arg,
 		break;
 	}
 	//TimeHelper::getComSem()->release();
+	//qDebug() << "CommunicationCoupling::processCmd4Pc()" << strDisp;
 }
 
 
@@ -289,6 +296,10 @@ void CommunicationCoupling::processCmd4PcClarity( quint8 hID, quint32 hAI, quint
 			case 4:
 			case 5:
 			case 6:
+			case 7:
+			case 8:
+			case 9:
+			case 10:
 				val = (double)hVal/1.0;
 				break;
 			default:
