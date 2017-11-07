@@ -20,6 +20,8 @@
 	2017-09-15		V1.00		修复运行时间程序时运行页面的时间显示跳动bug；
 								修复500ml以上泵类型不能与上位机软件通讯bug					
 																		zhjiehua
+	2017-10-16		V1.01		修复掰阀启动工作站时泵停止的bug			zhjiehua
+	2017-10-23		V1.02		修复泵的压力值与工作站上不一致的bug		zhjiehua
 */
 
 #include "baseMainPage.h"

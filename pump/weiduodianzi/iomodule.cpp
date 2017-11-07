@@ -173,7 +173,8 @@ void IoModule::readingIO()
 	}
 	
 #if ENABLE_AD_PRESS_SIMULATION//用于模拟读取到AD信号,同时可以测试开始停止是否生效;
-	quint32 temp = qrand()%1000;
+	//quint32 temp = qrand()%1000;
+	quint32 temp = 100;
 	emit(testPress(temp));
 #endif
 

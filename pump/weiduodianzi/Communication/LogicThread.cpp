@@ -26,8 +26,8 @@ static unsigned long temp_read = 0;
 #define COMMUNICATION_WITH_MCU//是否用串口和MCU通讯;
 
 #ifdef WIN32
-#define MAINCOMPORT		"COM6"//上位机通讯接口
-#define MCUCOMPORT		"COM7"//单片机通讯接口
+#define MAINCOMPORT		"COM7"//上位机通讯接口
+#define MCUCOMPORT		"COM9"//单片机通讯接口
 #elif linux
 #define MAINCOMPORT		"/dev/ttySAC2"//上位机通讯接口
 #define MCUCOMPORT		"/dev/ttySAC1"//单片机通讯接口

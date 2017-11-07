@@ -712,7 +712,12 @@ void MachineStat::uploadPresVal()
 	val = val * 100;
 	//旧协议;
 	if(DataBase::getInstance()->queryData("pcProtocol").toInt() == 0 )
+	{
+		int pumpType = DataBase::getInstance()->queryData("pumptype").toInt();
+		if(pumpType > 1 )
+			val = val / 10;
 		m_pCommunicationCoupling->sendCmd(1, PFC_READ_PRESS, val);
+	}
 	else//clarity协议;
 		m_pCommunicationCoupling->sendCmdClarity(0, PFCC_SEND_PRESS, DectoBCD(val, 4));
 }
@@ -1405,7 +1410,7 @@ void MachineStat::updateFlowInPcMode( double flow )
 	m_dCurrentflowValInPc = flow;
 	m_machineStat.m_bUpdateFlowFromPc = true;
 
-	qDebug() << "updateFlowInPcMode() flow = " << flow; //张杰华调试添加@2016-06-25
+	//qDebug() << "updateFlowInPcMode() flow = " << flow; //张杰华调试添加@2016-06-25
 
 	emit(updateFlowDisplay(QString::number(flow, 'f', 4)));			//更新流速显示;
 	//syncFlowFromPc();                     //张杰华删除@2016-06-15，去掉PC端更新流速后设备立即启动的功能
@@ -1442,7 +1447,7 @@ void MachineStat::syncFlowFromPc()
 
 		//emit(updateFlowDisplay(QString::number(m_dCurrentflowValInPc, 'f', 4)));			//更新流速显示;
 
-		qDebug() << "syncFlowFromPc() flow = " << m_dCurrentflowValInPc;
+		//qDebug() << "syncFlowFromPc() flow = " << m_dCurrentflowValInPc;
 	}
 
 	if(bOverPress)//张杰华添加@2016-07-26
@@ -1458,7 +1463,7 @@ void MachineStat::syncFlowToMcu( double flow )
 	if(last_flow != flow)
 	{
 		last_flow = flow;
-		qDebug() << "syncFlowToMcu() flow = " << flow;
+		//qDebug() << "syncFlowToMcu() flow = " << flow;
 	}
 
 	//过流检测;
@@ -1479,15 +1484,30 @@ void MachineStat::syncFlowToMcu( double flow )
 	//quint32 ret = flow*CONTROL_WORD_FACTOR;
 	quint32 ret = flow*GetWordFactor();
 	
+	static qint8 reSendMcuCmdFlag = 0;
+
 	if(m_nFlowCtrlWord != ret )
 	{
 		m_nFlowCtrlWord = ret;
+
+		reSendMcuCmdFlag = 0;
+
 		//更新控制字到MCU;
-		m_pCommunicationCoupling->sendMcuCmd(1, MCU_WAVEADD_MOTOR, ret);
+		//m_pCommunicationCoupling->sendMcuCmd(1, MCU_WAVEADD_MOTOR, ret);
+
 		//凸轮补偿同步;
 		//BugleCompensation::getInstance()->updateOutput(ret, flow);
 		
 		//qDebug() << "sendMcuCmd" << ret;//张杰华调试添加@2016-06-25
+	}
+
+	if(reSendMcuCmdFlag <= 3)
+	{
+		reSendMcuCmdFlag++;
+
+		//更新控制字到MCU;
+		//if(reSendMcuCmdFlag%2 == 1)
+			m_pCommunicationCoupling->sendMcuCmd(1, MCU_WAVEADD_MOTOR, ret);
 	}
 	
 	//使能流速更新;

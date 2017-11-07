@@ -2,15 +2,13 @@
 #include <QSignalTransition>
 #include <QDebug>
 
-
-
 #ifdef linux
 #include <sys/ioctl.h>
 static int fd = -1;
 static unsigned long temp_read = 0;
 #endif
 
-
+#define BUGLE_SIMULATE  //Ä£ÄâÍ¹ÂÖ
 
 
 IoModule::IoModule(QObject *parent)
@@ -111,7 +109,12 @@ void IoModule::init_s1()
 	qDebug()<<"s11";
 	ctl0Out(1);
 	ctl1Out(0);
+
+#ifndef INIT_SUCCESS_SIMULATE
 	m_pTimer->start(5000);
+#else
+	m_pTimer->start(0);
+#endif
 }
 
 void IoModule::init_s2()
@@ -122,7 +125,11 @@ void IoModule::init_s2()
 	else
 		ctl1Out(1);//ÎÙµÆ;
 
+#ifndef INIT_SUCCESS_SIMULATE
 	m_pTimer->start(1000);
+#else
+	m_pTimer->start(0);
+#endif
 }
 
 void IoModule::init_s3()
@@ -131,7 +138,12 @@ void IoModule::init_s3()
 	if(whichLamp == 0)
 	{
 		ctl1Out(1);
+
+#ifndef INIT_SUCCESS_SIMULATE
 		m_pTimer->start(1000);
+#else
+		m_pTimer->start(0);
+#endif
 	}
 	else
 		m_pTimer->start(0);
@@ -140,6 +152,11 @@ void IoModule::init_s3()
 void IoModule::init_s4()
 {
 	quint8 flag = getDin4();
+
+#ifdef INIT_SUCCESS_SIMULATE
+	flag = 0;
+#endif
+
 	if(flag == 0)
 	{
 		qDebug()<<"light success!!!!!!";
@@ -165,13 +182,14 @@ void IoModule::readingIO()
 	ioctl(fd, PWM_IOCTL_GET_EDG, (unsigned long*)(&temp_read));
 	ret = temp_read&IO_BULGE_MASK;
 
-#else
-	static quint32 cnt = 0;
-	if(++cnt == 3)
-	{
-		ret = 1;
-		cnt = 0;
-	}
+#endif
+#ifdef BUGLE_SIMULATE
+	//static quint32 cnt = 0;
+	//if(++cnt == 3)
+	//{
+	//	ret = 1;
+	//	cnt = 0;
+	//}
 #endif
 	if(ret)
 	{

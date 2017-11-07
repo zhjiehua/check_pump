@@ -13,6 +13,8 @@ DebugMcuProtoPage::DebugMcuProtoPage(QWidget *parent /*= 0*/, quint8 index, quin
 	ui.setupUi(this);
 	m_strTitle = tr("DebugPressPage");
 	initDisplay();
+
+	connect(this, SIGNAL(bugle()), MachineStat::getInstance(), SLOT(dealBulge()));
 }
 
 
@@ -115,16 +117,19 @@ void DebugMcuProtoPage::updatePressVal(QString press, quint8 add)
 
 void DebugMcuProtoPage::on_collectBtn_clicked()
 {
-	m_bCollectFlag = !m_bCollectFlag;
-	if(m_bCollectFlag)
-	{
-		timer->restart();
-	}
-	else
-	{
-		//保存文件;
-		DataBase::getInstance()->saveTableToFile(QString("/sdcard/press.txt"), gradient_model->getTableData());
-	}
+	//m_bCollectFlag = !m_bCollectFlag;
+	//if(m_bCollectFlag)
+	//{
+	//	timer->restart();
+	//}
+	//else
+	//{
+	//	//保存文件;
+	//	DataBase::getInstance()->saveTableToFile(QString("/sdcard/press.txt"), gradient_model->getTableData());
+	//}
+
+	emit(bugle());
+	//MachineStat::getInstance()->dealBulge();
 }
 
 void DebugMcuProtoPage::on_clearBtn_clicked()

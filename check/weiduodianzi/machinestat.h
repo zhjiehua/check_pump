@@ -9,7 +9,7 @@
 #include <QTimerEvent>
 #include "lineuint.h"
 #include "communicationcoupling.h"
-
+#include "iomodule.h"
 
 
 #define COMUNICATION_ERR 1//通讯出错
@@ -372,7 +372,9 @@ private slots:
 
 	void changeWlenLater();
 
-	
+#ifdef INIT_SUCCESS_SIMULATE
+	void motorInitSuccessSimulate();
+#endif
 
 signals:
 	void machineStatChanged(MachineStat::MachineStatment stat);		//机器状态变化;

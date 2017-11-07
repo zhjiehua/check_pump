@@ -612,7 +612,13 @@ void MachineStat::lightIniSuccess(bool success)
 		if(m_machineStat.machineStat == STARTUP)
 		{
 			QTimer::singleShot(500, this, SLOT(initStartup()));//延时500ms
+
+#ifdef INIT_SUCCESS_SIMULATE
+			QTimer::singleShot(1000, this, SLOT(motorInitSuccessSimulate()));
+			//MachineStat::getInstance()->motorInitSuccess();
+#endif
 		}
+
 	}
 	else
 	{
@@ -622,6 +628,20 @@ void MachineStat::lightIniSuccess(bool success)
 	}
 	
 }
+
+#ifdef INIT_SUCCESS_SIMULATE
+void MachineStat::motorInitSuccessSimulate()
+{
+	MachineStat::getInstance()->motorInitSuccess();
+
+	if(MachineStat::getInstance()->m_bSetWaveAfterHome)
+	{
+		MachineStat::getInstance()->m_bSetWaveAfterHome = false;
+		//张杰华修改@2016-07-03，将初始化电机前设置波长改成初始化完成后设置波长
+		MachineStat::getInstance()->setWaveCtrlWord();		//下发MCU波长值;
+	}
+}
+#endif
 
 void MachineStat::setLampStat(LampStatment stat)
 {
@@ -2352,7 +2372,6 @@ void MachineStat::clearWave2()
 
  void MachineStat::dealBulge()
 {
-#ifdef linux
 	if( DataBase::getInstance()->queryData("pcProtocol").toInt() == 0 )
 	{
 		qDebug() << "----dealBulge()----";
@@ -2362,7 +2381,6 @@ void MachineStat::clearWave2()
 	{
 		m_pCommunicationCoupling->sendCmdClarity(0, PFCC_INPUT_EVENT, 0);
 	}
-#endif
 }
 
  void MachineStat::changeWlenLater()

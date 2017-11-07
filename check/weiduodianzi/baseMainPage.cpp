@@ -42,7 +42,7 @@
 #ifdef linux
 #define NAVIGATOR_PAGE_SIZE	3
 #else
-#define NAVIGATOR_PAGE_SIZE	3
+#define NAVIGATOR_PAGE_SIZE	4
 #endif
 
 
@@ -464,6 +464,9 @@ void  BaseMainPage::navigatorPageAt(int index, bool force)
 	navigatorPageIndex.append(RUNPAGE_INDEX);
 	navigatorPageIndex.append(RUNPARAMPAGE_INDEX);
 	navigatorPageIndex.append(SETUPPAGE_INDEX);
+#ifndef linux
+	navigatorPageIndex.append(DEBUGPRESS_INDEX);
+#endif
 	//navigatorPageIndex.append(DEBUGPRESS_INDEX);
 	//navigatorPageIndex.append(SCANPAGE_INDEX);
 	

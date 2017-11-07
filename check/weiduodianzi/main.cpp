@@ -13,6 +13,8 @@
 																	zhjiehua
 	2017-08-15		V0.98		将超级管理员的密码由111111改成173895    
 																	zhjiehua
+	2017-11-07		V0.99		添加上位机模拟检测器的宏；
+								使用debug页面。						zhjiehua
 */
 
 #include "baseMainPage.h"

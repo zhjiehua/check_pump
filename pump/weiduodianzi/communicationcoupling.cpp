@@ -114,7 +114,7 @@ void CommunicationCoupling::processCmd4Pc(quint8 type, quint32 cmd, quint32 arg,
 			if(last_arg != arg)
 			{
 				last_arg = arg;
-				qDebug() << "processCmd4Pc() arg =" << arg; 
+				//qDebug() << "processCmd4Pc() arg =" << arg; 
 			}
 
 			int pumpType = m_pMachine->getPumpType();
@@ -152,7 +152,7 @@ void CommunicationCoupling::processCmd4Pc(quint8 type, quint32 cmd, quint32 arg,
 				m_pMachine->syncFlowFromPc();
 			}
 
-			//qDebug() << "CommunicationCoupling::processCmd4Pc()" << strDisp;
+			qDebug() << "CommunicationCoupling::processCmd4Pc()" << strDisp;
 		}
 		break;
 	case PFC_SET_MAXPRESS:
@@ -194,6 +194,7 @@ void CommunicationCoupling::processCmd4Pc(quint8 type, quint32 cmd, quint32 arg,
 				m_pMachine->syncFlowFromPc();//modified by wjf@2016-06-22;  //其实这里会不太严谨，上一句已经向MCU发送数据库的流速，这句是发PC发过来的流速给MCU
 			}
 		}
+		qDebug() << "CommunicationCoupling::processCmd4Pc()" << strDisp;
 		break;
 	case PFC_STOP:
 		{

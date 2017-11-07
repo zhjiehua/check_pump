@@ -5,6 +5,10 @@
 #include <QTimer>
 #include <QStateMachine>
 
+#ifndef linux
+#define INIT_SUCCESS_SIMULATE 1
+#endif
+
 #ifdef linux
 #include <stdio.h>
 #include <termios.h>

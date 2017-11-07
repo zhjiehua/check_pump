@@ -21,6 +21,9 @@ public:
 protected:
 	void initFocusList();
 
+signals:
+	void bugle();//Í¹ÂÖÐÅºÅ³öÏÖ;
+
 private:
 	Ui::DebugMcuProtoPageClass ui;
 	bool m_bStartFlag;
