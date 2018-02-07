@@ -37,8 +37,8 @@ bool wlen_chang = true;
 #define TIMEOUT60S	(60000/TIMEOUT)
 
 //au值数据池大小;
-#define FILTER_LIST_MAX			6  //6
-#define AU_LIST_MAX				12  //12
+#define FILTER_LIST_MAX			4  //6
+#define AU_LIST_MAX				8  //12
 #define AU_LIST_MAX_DOUBLE		AU_LIST_MAX
 
 #define SERIAL_MAX		9999999999
@@ -2588,8 +2588,8 @@ quint32 MachineStat::getWeightedAverage(QVector<quint32> &myVector)
 	quint32 average = 0;
 	quint32 averageCnt = 0;
 	quint32 len = myVector.count();
-	quint32 startIndex = len/4;
-	//quint32 startIndex = 0;
+	//quint32 startIndex = len/4;
+	quint32 startIndex = 0;
 
 	//排序 降序
 	for(int i = 0; i < len-1; i++)
@@ -2629,8 +2629,8 @@ double MachineStat::getWeightedAverage(QVector<double> &myVector)
 	double average = 0;
 	qint32 averageCnt = 0;
 	quint32 len = myVector.count();
-	quint32 startIndex = len/4;
-	//quint32 startIndex = 0;
+	//quint32 startIndex = len/4;
+	quint32 startIndex = 0;
 
 	//排序
 	for(int i = 0; i < len-1; i++)

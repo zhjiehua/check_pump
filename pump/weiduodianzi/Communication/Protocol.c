@@ -140,7 +140,7 @@ mbyte hex2Ascii(uint32 data_hex, mbyte *data, int len, int bsp)
 
 void API_SetPumpType(int pumpType)
 {
-	if(pumpType <0 || pumpType > 6)
+	if(pumpType <0 || pumpType > 10)
 		return;
 
 	g_protocol.nPumpType = pumpType;

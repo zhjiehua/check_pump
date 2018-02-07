@@ -22,6 +22,8 @@
 																		zhjiehua
 	2017-10-16		V1.01		修复掰阀启动工作站时泵停止的bug			zhjiehua
 	2017-10-23		V1.02		修复泵的压力值与工作站上不一致的bug		zhjiehua
+	2018-01-06		V1.03		修复超级页面保存数据文件不存在的bug		zhjiehua
+	2018-02-02		V1.04		修复1000ml泵反控不正常的bug				zhjiehua
 */
 
 #include "baseMainPage.h"

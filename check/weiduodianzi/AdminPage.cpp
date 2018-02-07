@@ -10,17 +10,17 @@
 #include <QFile>
 
 #ifdef WIN32
-#define SRCFILE			"H:/weiduodianzi.txt"
-#define TARGETFILE		"K:/weiduodianzi.txt"
+#define SRCFILE			"E:/weiduodianzi.txt"
+#define TARGETFILE		"F:/weiduodianzi.txt"
 
-#define SRCDBFILE		"H:/wda.txt"
-#define TARGETDBFILE	"K:/wda.txt"
+#define SRCDBFILE		"E:/wda.txt"
+#define TARGETDBFILE	"F:/wda.txt"
 #else
 #define SRCFILE			"/sdcard/sepuyi"
 #define TARGETFILE		"/bin/weiduodianzi"
 
 #define SRCDBFILE		"/sdcard/wda.db"
-#define TARGETDBFILE	"/wda.db"
+#define TARGETDBFILE	"/bin/wda.db"
 #endif
 
 AdminPage::AdminPage(QWidget *parent /*= 0*/, quint8 index, quint8 previndex, quint32 add)

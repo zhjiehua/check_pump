@@ -5,7 +5,7 @@
 #include "msgbox.h"
 #include <QFile>
 
-#define VERSION					"V1.02"
+#define VERSION					"V1.04"
 
 #ifdef WIN32
 #define SRCFILE			"H:/weiduodianzi.txt"
@@ -18,7 +18,7 @@
 #define TARGETFILE		"/bin/weiduodianzi"
 
 #define SRCDBFILE		"/sdcard/wda.db"
-#define TARGETDBFILE	"/wda.db"
+#define TARGETDBFILE	"/bin/wda.db"
 #endif
 
 MsgPage::MsgPage(QWidget *parent /*= 0*/, quint8 index, quint8 previndex, quint32 add)

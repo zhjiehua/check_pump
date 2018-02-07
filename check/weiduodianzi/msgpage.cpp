@@ -16,7 +16,7 @@
 #define TARGETFILE		"/bin/weiduodianzi"
 
 #define SRCDBFILE		"/sdcard/wda.db"
-#define TARGETDBFILE	"/wda.db"
+#define TARGETDBFILE	"/bin/wda.db"
 #endif
 
 MsgPage::MsgPage(QWidget *parent /*= 0*/, quint8 index, quint8 previndex, quint32 add)

@@ -15,6 +15,8 @@
 																	zhjiehua
 	2017-11-07		V0.99		添加上位机模拟检测器的宏；
 								使用debug页面。						zhjiehua
+	2017-12-12		V1.00		修复色谱柱效低的bug(数据滤波太严重)	zhjiehua
+	2018-01-06		V1.01		修复超级页面保存数据文件不存在的bug	zhjiehua
 */
 
 #include "baseMainPage.h"
