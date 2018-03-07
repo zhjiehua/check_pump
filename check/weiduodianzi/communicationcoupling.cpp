@@ -130,7 +130,7 @@ void CommunicationCoupling::processCmd4Pc(quint8 type, quint32 cmd, quint32 arg,
 	case PFC_SET_RANGCONST://ÉèÖÃÁ¿³Ì
 		{
 			//g_pMainWindow->changePage(RUNPARAMPAGE_INDEX);
-			int index = arg;
+			int index = arg%16;
 			DataBase::getInstance()->updateDate("range", QString::number(index));
 		}
 		break;
@@ -471,7 +471,7 @@ void CommunicationCoupling::processCmd4PcClarity(quint8 hID, quint32 hAI, quint3
 	case PFCC_SET_OUTPUTRNG:
 		{
 			int index = QString::number(hVal,16).toInt();
-			DataBase::getInstance()->updateDate("range", QString::number(index));
+			DataBase::getInstance()->updateDate("range", QString::number(index%16));
 			sendClarityACK();
 		}
 		break;

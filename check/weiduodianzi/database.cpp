@@ -428,7 +428,7 @@ double DataBase::getConstVal()
 	QList<double>list;
 	list<<0.0001<<0.0002<<0.0005<<0.001<<0.002<<0.005<<0.01<<0.02<<0.05<<0.1<<0.2<<0.5<<1<<2<<5<<10;
 	int index = DataBase::getInstance()->queryData("range").toInt();
-	return list.at(index);
+	return list.at(index%16);
 }
 
 void DataBase::initLampUsedHistoryTable()

@@ -76,8 +76,9 @@ void ComboCtrl::setVar( QString name )
 	m_varName = name;
 	DataBase *pDb = DataBase::getInstance();
 	int nIndex = pDb->queryData(m_varName).toInt();
-	if(nIndex >=0 && nIndex < count())
-		setCurrentIndex(nIndex);
+	//if(nIndex >=0 && nIndex < count())
+	//	setCurrentIndex(nIndex);
+	setCurrentIndex(nIndex%count());
 	connect(pDb, SIGNAL(dateChanged(QString, QString)), this, SLOT(dateChanged(QString, QString)));
 }
 

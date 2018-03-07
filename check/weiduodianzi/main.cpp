@@ -17,6 +17,8 @@
 								使用debug页面。						zhjiehua
 	2017-12-12		V1.00		修复色谱柱效低的bug(数据滤波太严重)	zhjiehua
 	2018-01-06		V1.01		修复超级页面保存数据文件不存在的bug	zhjiehua
+	2018-02-08		V1.02		修复死机bug,数据库中range字段超出combo的index导致
+																	zhjiehua
 */
 
 #include "baseMainPage.h"
