@@ -19,6 +19,8 @@
 	2018-01-06		V1.01		修复超级页面保存数据文件不存在的bug	zhjiehua
 	2018-02-08		V1.02		修复死机bug,数据库中range字段超出combo的index导致
 																	zhjiehua
+	2018-07-08		V1.03		将时间常数参数改成修改数据缓冲区大小功能
+																	zhjiehua
 */
 
 #include "baseMainPage.h"

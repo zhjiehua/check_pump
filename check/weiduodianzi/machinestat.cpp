@@ -38,8 +38,8 @@ bool wlen_chang = true;
 
 //au值数据池大小;
 #define FILTER_LIST_MAX			4  //6
-#define AU_LIST_MAX				8  //12
-#define AU_LIST_MAX_DOUBLE		AU_LIST_MAX
+#define AU_LIST_MAX				3  //12
+#define AU_LIST_MAX_DOUBLE		(AU_LIST_MAX*4)
 
 #define SERIAL_MAX		9999999999
 #define SERIAL_NUM_KEY	19900208
@@ -770,8 +770,10 @@ void MachineStat::updateSampleVal(quint32 val)
 	//	qDebug() << "updateSampleVal()";
 	//}
 
-	int timeInte = 1;
-	quint32 temp = val*timeInte;
+	int timeInte = DataBase::getInstance()->queryData("timeInte").toInt();//时间积分;
+	timeInte++;
+
+	quint32 temp = val;
 
 	quint32 average = 0;
 	quint32 outSampleAverage = 0;
@@ -787,7 +789,8 @@ void MachineStat::updateSampleVal(quint32 val)
 
 #if USE_FILTER
 			//数据池未满采用平均滤波
-			if(sampleValList.count() < AU_LIST_MAX)
+			//if(sampleValList.count() < AU_LIST_MAX)
+			if(sampleValList.count() < timeInte*AU_LIST_MAX)
 			{
 				sampleValList << temp;
 				average = getAverage(sampleValList);
@@ -802,7 +805,8 @@ void MachineStat::updateSampleVal(quint32 val)
 			}
 
 			//最大4阶滤波
-			if(sampleValOutList.count() > FILTER_LIST_MAX)
+			//if(sampleValOutList.count() > FILTER_LIST_MAX)
+			if(sampleValOutList.count() > timeInte)
 				sampleValOutList.removeFirst();
 			sampleValOutList << average;
 			outSampleAverage = orderFilter(sampleValOutList, sampleValOutList.count());
@@ -856,7 +860,8 @@ void MachineStat::updateSampleVal(quint32 val)
 
 #if USE_FILTER
 			//数据池未满采用平均滤波
-			if(sampleVal2List.count() < AU_LIST_MAX)
+			//if(sampleVal2List.count() < AU_LIST_MAX)
+			if(sampleVal2List.count() < timeInte*AU_LIST_MAX)
 			{
 				sampleVal2List << temp;
 				average = getAverage(sampleVal2List);
@@ -870,7 +875,8 @@ void MachineStat::updateSampleVal(quint32 val)
 			}
 
 			//最大4阶滤波
-			if(sampleVal2OutList.count() > FILTER_LIST_MAX)
+			//if(sampleVal2OutList.count() > FILTER_LIST_MAX)
+			if(sampleVal2OutList.count() > timeInte)
 				sampleVal2OutList.removeFirst();
 			sampleVal2OutList << average;
 			outSampleAverage = orderFilter(sampleVal2OutList, sampleVal2OutList.count());
@@ -930,8 +936,10 @@ void MachineStat::updateRefVal(quint32 val)
 		qDebug() << "updateRefVal";
 	}
 
-	int timeInte = 1;
-	quint32 temp = val*timeInte;
+	int timeInte = DataBase::getInstance()->queryData("timeInte").toInt();//时间积分;
+	timeInte++;
+
+	quint32 temp = val;
 
 	quint32 average = 0;
 	quint32 outRefAverage = 0;
@@ -949,7 +957,8 @@ void MachineStat::updateRefVal(quint32 val)
 
 #if USE_FILTER
 			//数据池未满采用平均滤波
-			if(refValList.count() < AU_LIST_MAX)
+			//if(refValList.count() < AU_LIST_MAX)
+			if(refValList.count() < timeInte*AU_LIST_MAX)
 			{
 				refValList << temp;
 				average = getAverage(refValList);
@@ -964,7 +973,8 @@ void MachineStat::updateRefVal(quint32 val)
 			}
 
 			//最大4阶滤波
-			if(refValOutList.count() > FILTER_LIST_MAX)
+			//if(refValOutList.count() > FILTER_LIST_MAX)
+			if(refValOutList.count() > timeInte)
 				refValOutList.removeFirst();
 			refValOutList << average;
 			outRefAverage = orderFilter(refValOutList, refValOutList.count());
@@ -1046,7 +1056,8 @@ void MachineStat::updateRefVal(quint32 val)
 
 #if USE_FILTER
 			//数据池未满采用平均滤波
-			if(refVal2List.count() < AU_LIST_MAX)
+			//if(refVal2List.count() < AU_LIST_MAX)
+			if(refVal2List.count() < timeInte*AU_LIST_MAX)
 			{
 				refVal2List << temp;
 				average = getAverage(refVal2List);
@@ -1060,7 +1071,8 @@ void MachineStat::updateRefVal(quint32 val)
 			}
 
 			//最大4阶滤波
-			if(refVal2OutList.count() > FILTER_LIST_MAX)
+			//if(refVal2OutList.count() > FILTER_LIST_MAX)
+			if(refVal2OutList.count() > timeInte)
 				refVal2OutList.removeFirst();
 			refVal2OutList << average;
 			outRefAverage = orderFilter(refVal2OutList, refVal2OutList.count());
