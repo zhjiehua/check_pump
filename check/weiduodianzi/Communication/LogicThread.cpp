@@ -45,7 +45,7 @@ static unsigned long temp_read = 0;
 
 //check
 #ifdef WIN32
-#define MAINCOMPORT		"COM2"//上位机通讯接口
+#define MAINCOMPORT		"COM5"//上位机通讯接口
 #define MCUCOMPORT		"COM6"//单片机通讯接口
 #elif linux
 #define MAINCOMPORT		"/dev/ttySAC2"//上位机通讯接口

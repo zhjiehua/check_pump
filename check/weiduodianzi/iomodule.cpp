@@ -110,7 +110,7 @@ void IoModule::init_s1()
 	ctl0Out(1);
 	ctl1Out(0);
 
-#ifndef INIT_SUCCESS_SIMULATE
+#if !INIT_SUCCESS_SIMULATE
 	m_pTimer->start(5000);
 #else
 	m_pTimer->start(0);
@@ -125,7 +125,7 @@ void IoModule::init_s2()
 	else
 		ctl1Out(1);//ны╣ф;
 
-#ifndef INIT_SUCCESS_SIMULATE
+#if !INIT_SUCCESS_SIMULATE
 	m_pTimer->start(1000);
 #else
 	m_pTimer->start(0);
@@ -139,7 +139,7 @@ void IoModule::init_s3()
 	{
 		ctl1Out(1);
 
-#ifndef INIT_SUCCESS_SIMULATE
+#if !INIT_SUCCESS_SIMULATE
 		m_pTimer->start(1000);
 #else
 		m_pTimer->start(0);
@@ -153,7 +153,7 @@ void IoModule::init_s4()
 {
 	quint8 flag = getDin4();
 
-#ifdef INIT_SUCCESS_SIMULATE
+#if INIT_SUCCESS_SIMULATE
 	flag = 0;
 #endif
 

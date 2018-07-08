@@ -372,7 +372,7 @@ private slots:
 
 	void changeWlenLater();
 
-#ifdef INIT_SUCCESS_SIMULATE
+#if INIT_SUCCESS_SIMULATE
 	void motorInitSuccessSimulate();
 #endif
 

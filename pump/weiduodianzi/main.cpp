@@ -1,4 +1,4 @@
-/*9
+/*
 	DATE			VERSION		DESCRIPTION								AUTHER
 	2016-08-11		V0.90		许可证控件不能保存首位是0的数字			zhjiehua
 	2016-08-12		V0.91		修改GLP页面（生产日期、安装日期等）		zhjiehua
@@ -24,6 +24,9 @@
 	2017-10-23		V1.02		修复泵的压力值与工作站上不一致的bug		zhjiehua
 	2018-01-06		V1.03		修复超级页面保存数据文件不存在的bug		zhjiehua
 	2018-02-02		V1.04		修复1000ml泵反控不正常的bug				zhjiehua
+	2018-04-09		V1.05		clarity协议制备泵100ml~500ml改成2个小数点精度；
+												800ml~3000ml改成1个小数点精度；
+																		zhjiehua
 */
 
 #include "baseMainPage.h"

@@ -613,7 +613,7 @@ void MachineStat::lightIniSuccess(bool success)
 		{
 			QTimer::singleShot(500, this, SLOT(initStartup()));//ÑÓÊ±500ms
 
-#ifdef INIT_SUCCESS_SIMULATE
+#if INIT_SUCCESS_SIMULATE
 			QTimer::singleShot(1000, this, SLOT(motorInitSuccessSimulate()));
 			//MachineStat::getInstance()->motorInitSuccess();
 #endif
@@ -629,7 +629,7 @@ void MachineStat::lightIniSuccess(bool success)
 	
 }
 
-#ifdef INIT_SUCCESS_SIMULATE
+#if INIT_SUCCESS_SIMULATE
 void MachineStat::motorInitSuccessSimulate()
 {
 	MachineStat::getInstance()->motorInitSuccess();

@@ -6,6 +6,7 @@
 #include <QStateMachine>
 
 #ifndef linux
+//#define INIT_SUCCESS_SIMULATE 0
 #define INIT_SUCCESS_SIMULATE 1
 #endif
 

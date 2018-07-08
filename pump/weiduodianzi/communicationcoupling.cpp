@@ -297,11 +297,13 @@ void CommunicationCoupling::processCmd4PcClarity( quint8 hID, quint32 hAI, quint
 			case 4:
 			case 5:
 			case 6:
+				val = (double)hVal/100.0;
+				break;
 			case 7:
 			case 8:
 			case 9:
 			case 10:
-				val = (double)hVal/1.0;
+				val = (double)hVal/10.0;
 				break;
 			default:
 				return;
